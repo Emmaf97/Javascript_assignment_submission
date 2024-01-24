@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,217 @@
     <link rel="stylesheet" media="only screen and (min-width: 969px)" href="../css/desktop.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width:968px)" href="../css/tablet.css">
 </head>
+
 <body>
-    <section id="header"></section>
-    <section id="navigation"></section>
-    <section id="Campaigns">
-        <section id="lostMineOfPhandelver"></section>
-        <section id="tyrannyOfDragons"></section>
-        <section id="lostmineofphandelver"></section>
-        <section id="princesOfTheApocalypse"></section>
-        <section id="outOfTheAbyss"></section>
-        <section id="curseOfTheStrahd"></section>
-        <section id="stormKingsThunder"></section>
-        <section id="talesFromTheYawningPortal"></section>
-        <section id="tombOfAnnihilation"></section>
-        <section id="rrakkma"></section>
-        <section id="waterdeepDragonHeist"></section>
+    <section id="header">
+        <h2>Logo goes here</h2>
+        <section id="mainNav">
+            <ul>
+                <li><a class="button" href="../html/index.html">Home</a></li>
+                <li><a class="button" href="../html/character.html">Character</a></li>
+                <li><a class="button" href="../html/campaigns.html">Campaigns</a></li>
+                <li><a class="button" href="../html/ruleset.html">Ruleset</a></li>
+                <li><a class="button" href="#contact-form">Contact</a></li>
+            </ul>
+        </section>
     </section>
-    <section id="footer"></section>
+    <!-- <section id="second-navigation">
+        <ul>
+            <li><a class="button" href="#lostMineOfPhandelver">Lost Mine Of Phandelver</a></li>
+            <li><a class="button" href="#tyrannyOfDragons">Tyranny Of Dragons</a></li>
+            <li><a class="button" href="#lostmineofphandelver">Campaigns</a></li>
+            <li><a class="button" href="#princesOfTheApocalypse">Princes Of The Apocalypse</a></li>
+            <li><a class="button" href="#outOfTheAbyss">Out Of The Abyss</a></li>
+            <li><a class="button" href="#curseOfTheStrahd">Curse Of The Strahd</a></li>
+            <li><a class="button" href="#stormKingsThunder">Storm Kings Thunder</a></li>
+            <li><a class="button" href="#talesFromTheYawningPortal">Tales From The Yawning Portal</a></li>
+            <li><a class="button" href="#tombOfAnnihilation">Tomb Of Annihilation</a></li> -->
+    <!-- <li><a class="button" href="#rrakkma">Contact</a></li> -->
+    <!-- <li><a class="button" href="#waterdeepDragonHeist">Waterdeep: Dragon Heist</a></li> -->
+    <!-- </ul> -->
+    <!-- </section> -->
+    <section id="Campaigns">
+        <section id="lostMineOfPhandelver">
+            <h2>Lost Mine Of Phandelver</h2>
+            <img src="../images/lostMineOfPhandelver.png" alt="Phandelver">
+            <h2>Price: $29.99 </h2>
+            <select name="priceConverters" id="priceConverter" required>
+                <option value="">--Please choose an option--</option>
+                <option value="euros">€</option>
+                <option value="pounds">£</option>
+                <option value="yen">¥</option>
+                <option value="lira">₤</option>
+            </select>
+            <h2>Description: Explore this introductory adventure to get started playing the world’s greatest roleplaying
+                game.
+            </h2>
+            <h2>A Death-Defying Adventure for Levels 1-11
+            </h2>
+        </section>
+        <section id="tyrannyOfDragons">
+            <h2>Tyranny Of Dragons</h2>
+            <img src="../images/tyrannyOfDragons.png" alt="tyrannyOfDragons">
+            <h2>Price: $29.99 </h2>
+            <select name="priceConverters1" class="priceConverter" required>
+                <option value="">--Please choose an option--</option>
+                <option value="euros">€</option>
+                <option value="pounds">£</option>
+                <option value="yen">¥</option>
+                <option value="lira">₤</option>
+            </select>
+            <h2>Description: The forces of Tiamat, Queen of Evil Dragons, bring war to the Forgotten Realms.
+                Led by the sinister Cult of the Dragon, an army of dragons and foul villains wage a merciless campaign
+                to unleash their draconic god upon the world.
+                Opposing them is a desperate alliance including the heroic Harpers and treacherous Zhentarim.
+                This fragile coalition needs heroes to unite them and find ways to resist the draconic threat.
+                Do you have the courage to stand against the Cult of the Dragon and the threat of Tiamat's immortal
+                tyranny?</h2>
+            <h2>An epic draconic adventure for levels 1-15</h2>
+        </section>
+
+        <section id="princesOfTheApocalypse">
+            <h2>Princes Of The Apocalypse</h2>
+            <img src="../images/princesOfTheApocalypse.png" alt="princesOfTheApocalypse">
+            <h2>Price: $29.99 </h2>
+            <select name="priceConverters2" class="priceConverter" required>
+                <option value="">--Please choose an option--</option>
+                <option value="euros">€</option>
+                <option value="pounds">£</option>
+                <option value="yen">¥</option>
+                <option value="lira">₤</option>
+            </select>
+            <h2>Description: The first signs are always small: bandits on the roads, pirates on the Dessarin River,
+                monster sightings throughout the Sumber Hills - all too close to the lands of civilized folk.
+                Are these events all some bizarre coincidence, or is there a deeper reason behind them?
+                Working through its prophets, the Elder Elemental Eye has emerged to spread chaos across the Forgotten
+                Realms.
+                How will the adventurers prevent absolute devastation?</h2>
+            <h2>An Apocalyptic Adventure for Levels 1-15</h2>
+        </section>
+        <section id="outOfTheAbyss">
+            <h2>Out Of The Abyss</h2>
+            <img src="../images/outOfTheAbyss.png" alt="outOfTheAbyss">
+            <h2>Price: $29.99 </h2>
+            <select name="priceConverters3" class="priceConverter" required>
+                <option value="">--Please choose an option--</option>
+                <option value="euros">€</option>
+                <option value="pounds">£</option>
+                <option value="yen">¥</option>
+                <option value="lira">₤</option>
+            </select>
+            <h2>Description: The Underdark is a subterranean wonderland, a vast and twisted labyrinth where fear reigns.
+                It is here that the dark elf Gromph Baenre, Archmage of Menzoberranzan, casts a foul spell meant to
+                ignite a magical energy that suffuses the Underdark, and he tears open portals to the demonic Abyss in
+                the process.
+                What steps through surprises even him, and from that moment on, the insanity that pervades the Underdark
+                escalates and threatens to shake the Forgotten Realms to its foundations.
+                Stop the madness before it consumes you!</h2>
+            <h2>An Underdark Adventure for Levels 1-15</h2>
+        </section>
+        <section id="curseOfTheStrahd">
+            <h2>Curse Of The Strahd</h2>
+            <img src="../images/curseOfTheStrahd.png" alt="curseOfTheStrahd">
+            <h2>Price: $29.99 </h2>
+            <select name="priceConverters4" class="priceConverter" required>
+                <option value="">--Please choose an option--</option>
+                <option value="euros">€</option>
+                <option value="pounds">£</option>
+                <option value="yen">¥</option>
+                <option value="lira">₤</option>
+            </select>
+            <h2>Description: Under raging storm clouds, the vampire Count Strahd von Zarovich stands silhouetted against
+                the ancient walls of Castle Ravenloft.
+                Rumbling thunder pounds the castle spires.
+                The wind’s howling increases as he turns his gaze down toward the village of Barovia.
+                Far below, yet not beyond his keen eyesight, a party of adventurers has just entered his domain.
+                Strahd’s face forms the barest hint of a smile as his dark plan unfolds.
+                The master of Castle Ravenloft is having guests for dinner.
+                And you are invited.</h2>
+            <h2>A Horror Adventure for Levels 1-10</h2>
+        </section>
+        <section id="stormKingsThunder">
+            <h2>Storm Kings Thunder</h2>
+            <img src="../images/stormKingsThunder.png" alt="stormKingsThunder">
+            <h2>Price: $29.99 </h2>
+            <select name="priceConverters5" class="priceConverter" required>
+                <option value="">--Please choose an option--</option>
+                <option value="euros">€</option>
+                <option value="pounds">£</option>
+                <option value="yen">¥</option>
+                <option value="lira">₤</option>
+            </select>
+            <h2>Description: Ages ago, giants and dragons waged war across the Savage Frontier.
+                These battles are long forgotten by the human civilizations of today, but ancient relics remain.
+                And now, the land shudders once more with the thunder of giant footsteps.
+                Puny adventurers must rise to the challenge, gather their strength, unlock the power of ancient runes,
+                and take the fight to the giants’ doorsteps.
+                Only then can they forge an alliance to end the war before it begins.</h2>
+            <h2>A Gigantic Adventure for Levels 1-10</h2>
+        </section>
+        <section id="talesFromTheYawningPortal">
+            <h2>Tales From The Yawning Portal</h2>
+            <img src="../images/talesFromTheYawningPortal.png" alt="talesFromTheYawningPortal">
+            <h2>Price: $29.99 </h2>
+            <select name="priceConverters6" class="priceConverter" required>
+                <option value="">--Please choose an option--</option>
+                <option value="euros">€</option>
+                <option value="pounds">£</option>
+                <option value="yen">¥</option>
+                <option value="lira">₤</option>
+            </select>
+            <h2>Within this tome are seven of the deadliest dungeons from the history of Dungeons &amp; Dragons, updated for
+                the current edition of the game. Some are classics that have hosted an untold number of adventurers,
+                while others are newer creations, boldly staking a claim to their place in the pantheon of notable
+                adventures.
+                The seeds of these stories rest in your hands. D&amp;D’s deadliest dungeons are now part of your arsenal of
+                adventures. Enjoy, and remember to keep a few spare character sheets handy.</h2>
+            <h2>Explore seven classic dungeons adventures</h2>
+        </section>
+        <section id="tombOfAnnihilation">
+            <h2>Tomb Of Annihilation</h2>
+            <img src="../images/tombOfAnnilhation.png" alt="tombOfAnnihilation">
+            <h2>Price: $29.99 </h2>
+            <select name="priceConverters7" class="priceConverter" required>
+                <option value="">--Please choose an option--</option>
+                <option value="euros">€</option>
+                <option value="pounds">£</option>
+                <option value="yen">¥</option>
+                <option value="lira">₤</option>
+            </select>
+            <h2>Description: The talk of the streets and taverns has all been about the so-called death curse: a wasting
+                disease afflicting everyone who’s ever been raised from the dead.
+                Victims grow thinner and weaker each day, slowly but steadily sliding toward the death they once denied.
+                When they finally succumb, they can’t be raised — and neither can anyone else.
+                Discover what’s behind this curse and secrets that lie in the Jungles of Chult in the adventure</h2>
+            <h2>A Death-Defying Adventure for Levels 1-11</h2>
+        </section>
+        <!-- <section id="rrakkma">
+            <img src="../images/" alt="rrakkma">
+        </section> -->
+        <section id="waterdeepDragonHeist">
+            <h2>Waterdeep Dragon Heist</h2>
+            <img src="../images/waterdeepDragonHeist.png" alt="waterdeepDragonHeist">
+            <h2>Price: $29.99 </h2>
+            <select name="priceConverters8" class="priceConverter" required>
+                <option value="">--Please choose an option--</option>
+                <option value="euros">€</option>
+                <option value="pounds">£</option>
+                <option value="yen">¥</option>
+                <option value="lira">₤</option>
+            </select>
+            <h2>Description: Take a mad romp through the wards of Waterdeep as you uncover a villainous plot involving
+                some of the city’s most influential figures.
+                A grand urban caper awaits you.
+                Pit your skill and bravado against villains the likes of which you’ve never faced before, and let the
+                dragon hunt begin! </h2>
+            <h2>A Treasure Hunting Adventure for Levels 1-5</h2>
+        </section>
+    </section>
+    <section id="footer">
+        <p>Name of The Company</p>
+        <p>Address of The Company</p>
+        <p>Telephone</p>
+        <p>Email</p>
+    </section>
 </body>
 </html>
