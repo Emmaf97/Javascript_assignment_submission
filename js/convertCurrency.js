@@ -12,10 +12,6 @@ function init(){
 function getCurrencySymbol(option){
 option = this.value;
 convertCurrency(option);
-//console.log(option);
-// let optionValues = document.querySelectorAll("#priceConverter option");
-// optionValues.forEach( option => console.log(option.value));
-
 }
 
 function convertCurrency(optionValue){
@@ -26,12 +22,8 @@ function convertCurrency(optionValue){
     let curPounds = 0.7853;
     let result = 0;
     if(optionValue === "euros"){
-        //console.log("Euro")
         result += Math.round(curDollar * curEuro * 100) / 100;
         updateCurrency(symbolEuro,result);
-        //console.log(result);
-        //calculate the conversion rate for this currency then store it as a value;
-        //this value is then passed into the updateCurrency();
 
     } else if(optionValue === "pounds"){
         result += Math.round(curDollar * curPounds * 100) / 100;
