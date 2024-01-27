@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Ruleset for Dungeons and Dragons (DND)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" media="only screen and (max-width: 767px)" href="../css/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 969px)" href="../css/desktop.css">
     <link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width:968px)" href="../css/tablet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <section id="header">
+    <section id="header" class="border-class">
         <h2>Logo goes here</h2>
         <section id="mainNav">
             <ul>
@@ -23,8 +28,9 @@
             </ul>
         </section>
     </section>
-    <section id="characterCreation">
+    <section id="characterCreation" class="border-class">
         <h1>Create Your Character</h1>
+        <div class="card border-class">
 
         <p>Your first step in playing an adventurer in the Dungeons &amp; Dragons game is to imagine and create a
             character of your own.
@@ -53,8 +59,9 @@
             or a piece of notebook paper.
             An official D&amp;D character sheet is a fine place to start until you know what information you need and
             how you use it during the game.</p>
-
+        </div>
         <h1>1. Choose a Race</h1>
+        <div class="card border-class">
 
         <p>Every character belongs to a race, one of the many intelligent humanoid species in the D&amp;D world.
             The most common player character races are dwarves, elves, halflings, and humans.
@@ -76,8 +83,9 @@
 
         <p>Record the traits granted by your race on your character sheet.
             Be sure to note your starting languages and your base speed as well.</p>
-
+        </div>
         <h1>2. Choose a Class</h1>
+        <div class="card  border-class">
 
         <p>Every adventurer is a member of a class.
             Class broadly describes a character’s vocation, what special talents he or she possesses, and the tactics he
@@ -93,8 +101,9 @@
             weapons to telling a convincing lie.</p>
 
         <p>On your character sheet, record all the features that your class gives you at 1st level.</p>
-
-        <h2>Level</h2>
+    </div>
+    <h2>Level</h2>
+    <div class="card border-class">
         <p>Typically, a character starts at 1st level and advances in level by adventuring and gaining experience points
             (XP).
             A 1st-level character is inexperienced in the adventuring world, although he or she might have been a
@@ -111,8 +120,9 @@
             Also record your experience points. A 1st-level character has 0 XP.
             A higher-level character typically begins with the minimum amount of XP required to reach that level (see
             “Beyond 1st Level” later in this section).</p>
-
+        </div>
         <h2>Hit Points and Hit Dice</h2>
+        <div class="card border-class">
 
         <p>Your character’s hit points define how tough your character is in combat and other dangerous situations.
             Your hit points are determined by your Hit Dice (short for Hit Point Dice).</p>
@@ -125,8 +135,9 @@
         <p>Record your character’s hit points on your character sheet.
             Also record the type of Hit Die your character uses and the number of Hit Dice you have.
             After you rest, you can spend Hit Dice to regain hit points (see “Resting” in the Adventuring section).</p>
-
+        </div>
         <h2>Proficiency Bonus</h2>
+        <div class="card border-class">
 
         <p>The table that appears in your class description shows your proficiency bonus, which is +2 for a 1st-level
             character.
@@ -152,8 +163,9 @@
             If a circumstance suggests that your proficiency bonus applies more than once to the same roll or that it
             should be multiplied more than once, you nevertheless add it only once, multiply it only once, and halve it
             only once.</p>
-
+        </div>
         <h2>3. Determine Ability Scores</h2>
+        <div class="card border-class">
         <p>Much of what your character does in the game depends on his or her six abilities: Strength, Dexterity,
             Constitution, Intelligence, Wisdom, and Charisma.
             Each ability has a score, which is a number you record on your character sheet.</p>
@@ -174,7 +186,9 @@
             To determine an ability modifier without consulting the table, subtract 10 from the ability score and then
             divide the result by 2 (round down).
             Write the modifier next to each of your scores.</p>
+        </div>
         <h2>Variant: Customizing Ability Scores</h2>
+        <div class="card border-class">
         <p>At your Dungeon Master’s option, you can use this variant for determining your ability scores.
             The method described here allows you to build a character with a set of ability scores you choose
             individually.</p>
@@ -186,111 +200,108 @@
         <p>This method of determining ability scores enables you to create a set of three high numbers and three low
             ones (15, 15, 15, 8, 8, 8), a set of numbers that are above average and nearly equal (13, 13, 13, 12, 12,
             12), or any set of numbers between those extremes.</p>
+        </div>
 
         <h2>Ability Score Point Cost</h2>
-        <table>
+        <table class="table table-light">
             <thead>
                 <tr>
-                    <th rowspan="1">Score</th>
-                    <th rowspan="1">Cost</th>
+                    <th scope="col">Score</th>
+                    <th scope="col">Cost</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Values</td>
-                    <td>Values</td>
+                    <td>8</td>
+                    <td>0</td>
                 </tr>
                 <tr>
-                    <td>Values</td>
-                    <td>Values</td>
+                    <td>9</td>
+                    <td>1</td>
                 </tr>
-            </tbody>
-        </table>
-        <h2>Ability Score Summary</h2>
-        <table>
-            <thead>
                 <tr>
-                    <th rowspan="1">Strength</th>
+                    <td>10</td>
+                    <td>2</td>
                 </tr>
-            </thead>
-            <tbody>
                 <tr>
-                    <td>Values</td>
-                    <td>Values</td>
-                    <td>Values</td>
-                    <td>Values</td>
-                    <td>Values</td>
+                    <td>11</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>9</td>
                 </tr>
             </tbody>
         </table>
         <h2>Ability Scores and Modifiers</h2>
-        <table>
-            <th>Strength</th>
-            <tr>
-                <td>Measures</td>
-                <td> Natural athleticism, bodily power</td>
-                <td>Important for</td>
-                <td>Barbarian, fighter, paladin</td>
-                <td>Racial Increases</td>
-                <td>Mountain dwarf (+2), Dragonborn (+2), Half-orc (+2), Human (+1)</td>
-            </tr>
-            <th>Dexterity</th>
-            <tr>
-                <td>Measures</td>
-                <td> Natural athleticism, bodily power</td>
-                <td>Important for</td>
-                <td>Barbarian, fighter, paladin</td>
-                <td>Racial Increases</td>
-                <td>Mountain dwarf (+2), Dragonborn (+2), Half-orc (+2), Human (+1)</td>
-            </tr>
-            <th>Constitution</th>
-            <tr>
-                <td>Measures</td>
-                <td> Natural athleticism, bodily power</td>
-                <td>Important for</td>
-                <td>Barbarian, fighter, paladin</td>
-                <td>Racial Increases</td>
-                <td>Mountain dwarf (+2), Dragonborn (+2), Half-orc (+2), Human (+1)</td>
-            </tr>
-            <th>Intelligence</th>
-            <tr>
-                <td>Measures</td>
-                <td> Natural athleticism, bodily power</td>
-                <td>Important for</td>
-                <td>Barbarian, fighter, paladin</td>
-                <td>Racial Increases</td>
-                <td>Mountain dwarf (+2), Dragonborn (+2), Half-orc (+2), Human (+1)</td>
-            </tr>
-            <th>Wisdom</th>
-            <tr>
-                <td>Measures</td>
-                <td> Natural athleticism, bodily power</td>
-                <td>Important for</td>
-                <td>Barbarian, fighter, paladin</td>
-                <td>Racial Increases</td>
-                <td>Mountain dwarf (+2), Dragonborn (+2), Half-orc (+2), Human (+1)</td>
-            </tr>
-            <th>Charisma</th>
-            <tr>
-                <td>Measures</td>
-                <td> Natural athleticism, bodily power</td>
-                <td>Important for</td>
-                <td>Barbarian, fighter, paladin</td>
-                <td>Racial Increases</td>
-                <td>Mountain dwarf (+2), Dragonborn (+2), Half-orc (+2), Human (+1)</td>
-            </tr>
-            <th>Strength</th>
-            <tr>
-                <td>Measures</td>
-                <td> Natural athleticism, bodily power</td>
-                <td>Important for</td>
-                <td>Barbarian, fighter, paladin</td>
-                <td>Racial Increases</td>
-                <td>Mountain dwarf (+2), Dragonborn (+2), Half-orc (+2), Human (+1)</td>
-            </tr>
-        </table>
+        <div class="card border-class">
+            <h2>Strength</h2>
+            <p class="bold-text">Measures</p>
+            <p>Natural athleticism, bodily power</p>
+            <p class="bold-text">Important for</p>
+            <p>Barbarian, fighter, paladin</p>
+            <p class="bold-text">Racial Increases</p>
+            <p>Mountain dwarf (+2), Dragonborn (+2), Half-orc (+2), Human (+1)</p>
+        </div>
+        <div class="card border-class">
+            <h2>Dexterity</h2>
+            <p class="bold-text">Measures</p>
+            <p>Physical agility, reflexes, balance, poise</p>
+            <p class="bold-text">Important for</p>
+            <p>Monk, ranger, rogue</p>
+            <p class="bold-text">Racial Increases</p>
+            <p>Elf (+2), Halfling (+2), Forest gnome (+1), Human (+1)</p>
+        </div>
+        <div class="card border-class">
+            <h2>Constitution</h2>
+            <p class="bold-text">Measures</p>
+            <p>Health, stamina, vital force</p>
+            <p class="bold-text">Important for</p>
+            <p>Everyone</p>
+            <p class="bold-text">Racial Increases</p>
+            <p>Dwarf (+2), Stout halfling (+1), Rock gnome (+1), Half-orc (+1), Human (+1)</p>
+        </div>
+        <div class="card border-class">
+            <h2>Intelligence</h2>
+            <p class="bold-text">Measures</p>
+            <p>Mental acuity, information recall, analytical skill</p>
+            <p class="bold-text">Important for</p>
+            <p>Wizard</p>
+            <p class="bold-text">Racial Increases</p>
+            <p>High elf (+1), Gnome (+2), Tiefling (+1), Human (+1)</p>
+        </div>
+        <div class="card border-class">
+            <h2>Wisdom</h2>
+            <p class="bold-text">Measures</p>
+            <p>Awareness, intuition, insight</p>
+            <p class="bold-text">Important for</p>
+            <p>Cleric, druid</p>
+            <p class="bold-text">Racial Increases</p>
+            <p>Hill dwarf (+1), Wood elf (+1), Human (+1)</p>
+        </div>
+        <div class="card border-class">
+            <h2>Charisma</h2>
+            <p class="bold-text">Measures</p>
+            <p>Confidence, eloquence, leadership</p>
+            <p class="bold-text">Important for</p>
+            <p>Bard, sorcerer, warlock</p>
+            <p class="bold-text">Racial Increases</p>
+            <p>Half-elf (+2), Drow (+1), Lightfoot halfling (+1), Dragonborn (+1), Tiefling (+2), Human (+1)</p>
+        </div>
         <h2>Ability Scores and Modifiers</h2>
-        <table>
+        <table class="table table-light">
             <th>Score</th>
             <th>Modifier</th>
             <tr>
@@ -358,6 +369,7 @@
                 <td>+10</td>
             </tr>
         </table>
+        <div class="card border-class">
         <h2>4. Describe Your Character</h2>
         <p>Once you know the basic game aspects of your character, it’s time to flesh him or her out as a person.
             Your character needs a name. Spend a few minutes thinking about what he or she looks like and how he or she
@@ -378,7 +390,8 @@
         <p>A background gives your character a background feature (a general benefit) and proficiency in two skills, and
             it might also give you additional languages or proficiency with certain kinds of tools.
             Record this information, along with the personality information you develop, on your character sheet.</p>
-
+        </div>
+        <div class="card border-class">
         <h2>Your Character's Abilities</h2>
         <p>Take your character’s ability scores and race into account as you flesh out his or her appearance and
             personality.
@@ -396,7 +409,9 @@
             character with low Wisdom might be absent-minded, foolhardy, or oblivious.</p>
         <p>A character with high Charisma exudes confidence, which is usually mixed with a graceful or intimidating
             presence. A character with a low Charisma might come across as abrasive, inarticulate, or timid.</p>
+        </div>
         <h2>5. Choose Equipment</h2>
+        <div class="card border-class">
         <p>Your class and background determine your character’s starting equipment, including weapons, armor, and other
             adventuring gear. Record this equipment on your character sheet. All such items are detailed in the
             Equipment section.</p>
@@ -408,7 +423,9 @@
         <p>Your Strength score limits the amount of gear you can carry. Try not to purchase equipment with a total
             weight (in pounds) exceeding your Strength score times 15. "Using Ability Scores" has more information on
             carrying capacity.</p>
+        </div>
         <h2>Armor Class</h2>
+        <div class="card border-class">
         <p>Your Armor Class (AC) represents how well your character avoids being wounded in battle. Things that
             contribute to your AC include the armor you wear, the shield you carry, and your Dexterity modifier. Not all
             characters wear armor or carry shields, however.</p>
@@ -420,7 +437,9 @@
             shield if you lack the required proficiency, as explained in the Equipment section.</p>
         <p>Some spells and class features give you a different way to calculate your AC. If you have multiple features
             that give you different ways to calculate your AC, you choose which one to use.</p>
+        </div>
         <h2>Weapons</h2>
+        <div class="card border-class">
         <p>For each weapon your character wields, calculate the modifier you use when you attack with the weapon and the
             damage you deal when you hit.</p>
         <p>When you make an attack with a weapon, you roll a d20 and add your proficiency bonus (but only if you are
@@ -429,12 +448,15 @@
             finesse property, such as a rapier, can use your Dexterity modifier instead.</p>
         <p>For attacks with ranged weapons, use your Dexterity modifier for attack and damage rolls. A melee weapon that
             has the thrown property, such as a handaxe, can use your Strength modifier instead.</p>
+        </div>
         <h2>6. Come Together</h2>
+        <div class="card border-class">
         <p>Most D&amp;D characters don’t work alone. Each character plays a role within a party, a group of adventurers
             working together for a common purpose. Teamwork and cooperation greatly improve your party’s chances to
             survive the many perils in the worlds of Dungeons &amp; Dragons.
             Talk to your fellow players and your DM to decide whether your characters know one another, how they met,
             and what sorts of quests the group might undertake.</p>
+        </div>
     </section>
     <section id="footer">
         <p>Name of The Company</p>
