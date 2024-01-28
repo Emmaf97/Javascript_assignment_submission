@@ -55,9 +55,11 @@ input[button] {
     font-weight: bold;
 }
 
-/* .btn.btn-primary {
-    background-color: purple;
-} */
+.btn.active {
+    color: white;
+    border: 1px solid white;
+    /* background-color: purple; */
+}
 .card{
     background-color: #f6f5f5;
     width:30%;
@@ -69,6 +71,6 @@ input[button] {
     height: 40%; 
     /* width: 50%; */
 }
-.text-primary{
+.text-primaryDark{
     color:white;
 }
