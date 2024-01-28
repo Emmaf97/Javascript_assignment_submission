@@ -9,10 +9,10 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" media="only screen and (max-width: 767px)" href="../css/mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 969px)" href="../css/desktop.css">
+    <link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width:968px)" href="../css/tablet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width:968px)" href="../css/tablet.css"> -->
 </head>
 
 <body>
@@ -28,11 +28,11 @@
                 <li><a class="button" href="../html/ruleset.html">Ruleset</a></li>
                 <li><a class="button" href="#contact-form">Contact</a></li>
             </ul>
+            <button type="button"  id="darkModeBtn" class="btn" data-bs-toggle="button" aria-pressed="false">Dark Mode</button>
         </section>
         <section id="grid-result-characterBox-campaignBox" class="border-class">
             <div class="card characterPage">
                 <a class="btn btn-primary" href="character.html">Click Here</a>
-                <!-- <input type="button" id="character" value="Click Here"> -->
             </div>
             <div class="card externalLink(D&DBeyond)">
                 <a class="btn btn-primary" href="https://www.dndbeyond.com/">Click Here</a>
@@ -95,6 +95,7 @@
             </div>
         </section>
         <section id="contact" class="border-class">
+            <div class="card border-class">
             <fieldset class="text-primary">
                 <legend>Contact us</legend>
                 <form id="contact-form">
@@ -119,6 +120,7 @@
                     <input type="submit" value="Submit" class="btn btn-primary">
                 </form>
             </fieldset>
+        </div>
         </section>
         <section id="footer" class="text-primary border-class">
             <p>Name of The Company</p>
@@ -127,7 +129,9 @@
             <p>Email</p>
         </section>
     </div>
-    <script src="../js/script.js"></script>
+    <script src="../js/formValidation.js"></script>
+    <script src="../js/darkMode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
