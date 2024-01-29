@@ -21,15 +21,25 @@ h2 {
     font-family: 'Oswald', sans-serif;
 }
 
-ul>li {
+.ul>.li {
     font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+.mainNavDark{
+    color: white;
+}
+li::marker{
+    content: none;
+}
+a{
+    text-decoration: none;
 }
 
 input[button] {
     font-family: 'Oswald', sans-serif;
 }
 
-.button {
+.mainNav {
     font-family: 'Oswald', sans-serif;
 }
 .button-dark{

@@ -12,6 +12,7 @@ function darkMode() {
     let btnElement = document.querySelector(".btn");
     let btnElements = document.querySelectorAll(".btn-primary");
     let footer = document.querySelector("#footer");
+    let mainNav = document.querySelectorAll(".mainNav");
 
     if (btnElement) {
         if (!toggle.classList.contains("active")) {
@@ -21,6 +22,9 @@ function darkMode() {
             for (i = 0; i < btnElements.length; i++) {
                 btnElements[i].classList.remove("button-dark");
             }
+            for(j=0; j < mainNav.length; j++){
+                mainNav[j].classList.remove("mainNavDark")
+            }
         }
         if (toggle.classList.contains("active")) {
             body.classList.add("body-dark");
@@ -29,7 +33,9 @@ function darkMode() {
             for (i = 0; i < btnElements.length; i++) {
                 btnElements[i].classList.add("button-dark");
             }
-            // btnElements.classList.add("button-dark");
+            for(j=0; j < mainNav.length; j++){
+                mainNav[j].classList.add("mainNavDark");
+            }
         }
     }
     else {
