@@ -9,6 +9,10 @@ body{
     color: red;
 }
 
+#canvas1{
+    background-color: black;
+}
+
 #footer>p {
     font-family: 'Oswald', sans-serif;
 }
@@ -16,14 +20,38 @@ body{
 h2 {
     font-family: 'Oswald', sans-serif;
 }
-
+.mainNav{
+    margin: auto;
+}
 #contact-form {
     font-family: 'Oswald', sans-serif;
 }
 
-.ul>.li {
+ul{
+    text-align: center;
+    display: inline-flex;
+    margin-left: 10%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+ul > li {
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
+    font-size: large;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: auto;
+    border: solid 2px black;
+    border-radius: 20%;
+    border-width: 20%;
+}
+#darkModeBtn{
+    display: inline-flex;
+    margin-left:20%;
+    /* margin: auto; */
+    margin-top: 5%;
 }
 .mainNavDark{
     color: white;
@@ -41,6 +69,11 @@ input[button] {
 
 .mainNav {
     font-family: 'Oswald', sans-serif;
+}
+#mainNav{
+    display: block;
+    /* margin: auto; */
+    margin-left: 30%;
 }
 .button-dark{
     background-color:orangered;
@@ -70,12 +103,24 @@ input[button] {
     border: 1px solid white;
     /* background-color: purple; */
 }
+.btn{
+    border: 1px solid black;
+}
 .card{
     background-color: #f6f5f5;
-    width:30%;
+    width:50%;
+    margin: auto;
 }
 .card.campaign{
     width: 40%;
+}
+.characterPage{
+    background-color: black;
+}
+#image-grid{
+    margin:auto;
+    display: inline-flex;
+    flex-wrap: nowrap;
 }
 .iframe{
     height: 40%; 

@@ -34,6 +34,7 @@ function darkMode() {
         }
     }
 }
+
 function darkModeRules() {
     let { darkToggleRules, body, btnElement, footer, mainNav } = getRulesDocElements();
     //let darkToggleRules = document.getElementById("darkModeBtnRules");
