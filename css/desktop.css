@@ -13,8 +13,11 @@ body{
     background-color: black;
 }
 
-#footer>p {
+.footer>p {
     font-family: 'Oswald', sans-serif;
+    text-align: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 h2 {
@@ -28,28 +31,29 @@ h2 {
 }
 
 ul{
-    text-align: center;
     display: inline-flex;
-    margin-left: 10%;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+    /* margin:auto; */
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
 ul > li {
-    font-family: 'Oswald', sans-serif;
+        /* font-family: 'Oswald', sans-serif; */
     text-decoration: none;
     font-size: large;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin: auto;
-    border: solid 2px black;
-    border-radius: 20%;
-    border-width: 20%;
+    /* padding-left: 5%; */
+    /* padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%; */
+    margin-right: 7%;
+    margin-left: 7%;
+    /* margin: auto; */
+    /* border: solid 2px black; */
+    /* border-radius: 10%; */
 }
 #darkModeBtn{
     display: inline-flex;
-    margin-left:20%;
+    margin-left:30%;
     /* margin: auto; */
     margin-top: 5%;
 }
@@ -67,13 +71,37 @@ input[button] {
     font-family: 'Oswald', sans-serif;
 }
 
-.mainNav {
+/* .mainNav {
     font-family: 'Oswald', sans-serif;
-}
-#mainNav{
-    display: block;
+} */
+/* #mainNav{ */
+    /* display: block; */
     /* margin: auto; */
-    margin-left: 30%;
+    /* margin-left: 30%; */
+/* } */
+.parentClass{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+/* p{
+    justify-content: center;
+    align-items: center;
+} */
+/* #footer>p.footer {
+    font-family: 'Oswald', sans-serif;
+    margin: auto;
+} */
+/* p.footer{
+    
+    /* justify-content: center;
+    align-items: center;  */
+/* }  */
+.childClass{
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .button-dark{
     background-color:orangered;
@@ -108,7 +136,7 @@ input[button] {
 }
 .card{
     background-color: #f6f5f5;
-    width:50%;
+    width:90%;
     margin: auto;
 }
 .card.campaign{
@@ -124,6 +152,7 @@ input[button] {
 }
 .iframe{
     height: 40%; 
+    width: 80%;
     /* width: 50%; */
 }
 .text-primaryDark{
