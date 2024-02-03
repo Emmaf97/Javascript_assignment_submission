@@ -22,32 +22,37 @@
 
 <body>
     <div class="container border-class">
-        <section id="header" class="border-class">
-            <h2>Logo goes here</h2>
-            <section id="mainNav">
-                <ul>
-                    <li><a class="mainNav" href="../html/index.html">Home</a></li>
-                    <li><a class="mainNav" href="../html/character.html">Character</a></li>
-                    <li><a class="mainNav" href="../html/campaigns.html">Campaigns</a></li>
-                    <li><a class="mainNav" href="../html/ruleset.html">Ruleset</a></li>
-                    <li><a class="mainNav" href="../html/index.html#contact-form">Contact</a></li>
-                </ul>
-                <button type="button"  id="darkModeBtnCamp" class="btn" data-bs-toggle="button" aria-pressed="false">Dark Mode</button>
-            </section>
+        <section id="header" class="header border-class">
+            <!-- <h2>Logo goes here</h2> -->
+            <canvas class="canvas"></canvas>
+        </section>
+        <section id="mainNav" class="border-class">
+            <div class="parentClass border-class">
+                <div class="childClass border-class">
+            <ul>
+                <li><a class="btn btn-primary" href="../html/index.html">Home</a></li>
+                <li><a class="btn btn-primary" href="../html/character.html">Character</a></li>
+                <li><a class="btn btn-primary" href="../html/campaigns.html">Campaigns</a></li>
+                <li><a class="btn btn-primary" href="../html/ruleset.html">Ruleset</a></li>
+                <li><a class="btn btn-primary" href="../html/index.html#contact-form">Contact</a></li>
+            </ul>
+            <button type="button"  id="darkModeBtn" class="btn" data-bs-toggle="button" aria-pressed="false">Dark Mode</button>
+        </div>
+        </div>
         </section>
         <section id="Campaigns">
+            <select name="priceConverters" id="priceConverter" required>
+                <option value="">--Please choose an option--</option>
+                <option value="euros">€</option>
+                <option value="pounds">£</option>
+                <option value="yen">¥</option>
+                <option value="lira">₤</option>
+            </select>
             <section id="lostMineOfPhandelver">
                 <div class="card campaign border-class">
                     <h2>Lost Mine Of Phandelver</h2>
                     <img src="../images/lostMineOfPhandelver.png" alt="Phandelver">
                     <h2 class="price">Price: $29.99 </h2>
-                    <select name="priceConverters" id="priceConverter" required>
-                        <option value="">--Please choose an option--</option>
-                        <option value="euros">€</option>
-                        <option value="pounds">£</option>
-                        <option value="yen">¥</option>
-                        <option value="lira">₤</option>
-                    </select>
                     <h2>Description: Explore this introductory adventure to get started playing the world’s greatest
                         roleplaying
                         game.
@@ -57,9 +62,9 @@
                 </div>
             </section>
             <section id="tyrannyOfDragons">
-                <div class="card campaign border-class">
+                <div class="card campaign tyrannyOfDragons border-class">
                     <h2>Tyranny Of Dragons</h2>
-                    <img src="../images/tyrannyOfDragons.png" alt="tyrannyOfDragons">
+                    <!-- <img src="../images/tyrannyOfDragons.png" alt="tyrannyOfDragons"> -->
                     <h2 class="price">Price: $29.99 </h2>
                     <h2>Description: The forces of Tiamat, Queen of Evil Dragons, bring war to the Forgotten Realms.
                         Led by the sinister Cult of the Dragon, an army of dragons and foul villains wage a merciless
@@ -91,7 +96,7 @@
                 </div>
             </section>
             <section id="outOfTheAbyss">
-                <div class="card campaign border-class">
+                <div class="card border-class">
                     <h2>Out Of The Abyss</h2>
                     <img src="../images/outOfTheAbyss.png" alt="outOfTheAbyss">
                     <h2 class="price">Price: $29.99 </h2>
@@ -110,7 +115,7 @@
                 </div>
             </section>
             <section id="curseOfTheStrahd">
-                <div class="card campaign border-class">
+                <div class="card  border-class">
                     <h2>Curse Of The Strahd</h2>
                     <img src="../images/curseOfTheStrahd.png" alt="curseOfTheStrahd">
                     <h2 class="price">Price: $29.99 </h2>
@@ -127,7 +132,7 @@
                 </div>
             </section>
             <section id="stormKingsThunder">
-                <div class="card campaign border-class">
+                <div class="card  border-class">
                     <h2>Storm Kings Thunder</h2>
                     <img src="../images/stormKingsThunder.png" alt="stormKingsThunder">
                     <h2 class="price">Price: $29.99 </h2>
@@ -142,7 +147,7 @@
                 </div>
             </section>
             <section id="talesFromTheYawningPortal">
-                <div class="card campaign border-class">
+                <div class="card  border-class">
                     <h2>Tales From The Yawning Portal</h2>
                     <img src="../images/talesFromTheYawningPortal.png" alt="talesFromTheYawningPortal">
                     <h2 class="price">Price: $29.99 </h2>
@@ -176,7 +181,7 @@
                 </div>
             </section>
             <section id="waterdeepDragonHeist">
-                <div class="card campaign border-class">
+                <div class="card border-class">
                     <h2>Waterdeep Dragon Heist</h2>
                     <img src="../images/waterdeepDragonHeist.png" alt="waterdeepDragonHeist">
                     <h2 class="price">Price: $29.99 </h2>

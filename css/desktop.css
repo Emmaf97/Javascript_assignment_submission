@@ -1,131 +1,9 @@
-.body-dark{
-    background-color: black;
-}
-body{
-    background-color: white;
-}
-.invalid-Form-Input {
-    background-color: white;
-    color: red;
-}
-
-#canvas1{
+.body-dark {
     background-color: black;
 }
 
-.footer>p {
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    /* justify-content: center;
-    align-items: center; */
-}
-
-h2 {
-    font-family: 'Oswald', sans-serif;
-}
-.mainNav{
-    margin: auto;
-}
-#contact-form {
-    font-family: 'Oswald', sans-serif;
-}
-
-ul{
-    display: inline-flex;
-    /* margin:auto; */
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-}
-ul > li {
-        /* font-family: 'Oswald', sans-serif; */
-    text-decoration: none;
-    font-size: large;
-    /* padding-left: 5%; */
-    /* padding-right: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%; */
-    margin-right: 7%;
-    margin-left: 7%;
-    /* margin: auto; */
-    /* border: solid 2px black; */
-    /* border-radius: 10%; */
-}
-#darkModeBtn{
-    display: inline-flex;
-    margin-left:30%;
-    /* margin: auto; */
-    margin-top: 5%;
-}
-.mainNavDark{
-    color: white;
-}
-li::marker{
-    content: none;
-}
-a{
-    text-decoration: none;
-}
-
-input[button] {
-    font-family: 'Oswald', sans-serif;
-}
-
-#characterPageCard{
-    /* margin-right: 2%; */
-    /* height: 20vh; */
-    width: 20vw;
-}
-#externalLinkCard{
-    /* margin-right: 2%; */
-    width: 20vw;
-}
-#videosCard{
-/* margin-right: 2%; */
-width: 20vw;
-}
-#backgroundsCard{
-/* margin-right: 2%; */
-width: 20vw;
-}
-#campaignCard{
-/* margin-right: 2%; */
-width: 20vw;
-}
-/* .mainNav {
-    font-family: 'Oswald', sans-serif;
-} */
-/* #mainNav{ */
-    /* display: block; */
-    /* margin: auto; */
-    /* margin-left: 30%; */
-/* } */
-.parentClass{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-/* p{
-    justify-content: center;
-    align-items: center;
-} */
-/* #footer>p.footer {
-    font-family: 'Oswald', sans-serif;
-    margin: auto;
-} */
-/* p.footer{
-    
-    /* justify-content: center;
-    align-items: center;  */
-/* }  */
-.childClass{
-margin: auto;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.button-dark{
-    background-color:orangered;
+body {
+    background-color: white;
 }
 
 .border-class {
@@ -135,70 +13,194 @@ align-items: center;
 .container {
     max-width: 100%;
 }
-fieldset{
+
+.canvas {
+    background-color: black;
+    margin: auto;
+}
+
+.mainNav {
+    margin: auto;
+}
+.header{
+    display: flex;
+}
+
+ul {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+ul>li {
+    text-decoration: none;
+    font-size: large;
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+li::marker {
+    content: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#image-grid {
+    margin: auto;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.text-primaryDark {
+    color: white;
+}
+
+#darkModeBtn {
+    display: inline-flex;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.button-dark {
+    background-color: orangered;
+}
+
+.btn.active {
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.btn {
+    border: 1px solid black;
+}
+
+.mainNavDark {
+    color: white;
+}
+
+.parentClass {
+    display: flex;
+    margin-left: 30vh;
+    /* align-items: center; */
+    justify-content: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.childClass {
+        /* margin: auto; */
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center;
+    /* margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#characterPageCard {
+    width: 20vw;
+}
+
+#externalLinkCard {
+    width: 20vw;
+}
+
+#videosCard {
+    width: 20vw;
+}
+
+#backgroundsCard {
+    width: 20vw;
+}
+
+#campaignCard {
+    width: 20vw;
+}
+
+.invalid-Form-Input {
+    background-color: white;
+    color: red;
+}
+
+.footer>p {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+#contact-form {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+input[button] {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+fieldset {
     font-family: 'Oswald', sans-serif;
     height: 100vh;
     width: 60vh;
     margin: auto;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
 
-
-
-/* .input[text].text.primary {
-    background-color: #e1e1e1;
-} */
-
-.bold-text{
+.bold-text {
     font-weight: bold;
 }
 
-.btn.active {
-    color: white;
-    border: 1px solid white;
-    /* background-color: purple; */
-}
-.btn{
-    border: 1px solid black;
-}
-.card{
+
+.card {
     background-color: #f6f5f5;
-    /* width:90%; */
     height: 70vh;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-bottom-width: 5%; */
-    /* padding-top: 5%;
-    padding-bottom: 5%; */
-}
-.card-body{
-    display: block;
-    margin: auto;
-    width: 100%;
-    /* height: 50%; */
 }
 
-.card.campaign{
-    width: 40%;
+.card-body {
+    display: block;
+    margin: auto;
+    width: 90%;
 }
-.characterPage{
+
+.card.campaign {
+    height: 70vh;
+    width: 70vw;
+    margin-bottom: 2vh;
+
+}
+
+.card.campaign.tyrannyOfDragons {
+    background-image: url(../images/tyrannyOfDragons\ copy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.characterPage {
     background-color: black;
 }
-#image-grid{
-    margin:auto;
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: nowrap;
-}
-.iframe{
-    height: 100%; 
-    width: 100%;
-    /* width: 50%; */
-}
-.text-primaryDark{
-    color:white;
+
+img {
+    width: 40vh;
+    height: 40vh;
 }
