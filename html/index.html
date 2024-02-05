@@ -24,33 +24,36 @@
         <section id="mainNav" class="border-class">
             <div class="parentClass border-class">
                 <div class="childClass border-class">
-            <ul>
-                <li><a class="btn btn-primary" href="../html/index.html">Home</a></li>
-                <li><a class="btn btn-primary" href="../html/character.html">Character</a></li>
-                <li><a class="btn btn-primary" href="../html/campaigns.html">Campaigns</a></li>
-                <li><a class="btn btn-primary" href="../html/ruleset.html">Ruleset</a></li>
-                <li><a class="btn btn-primary" href="#contact-form">Contact</a></li>
-            </ul>
-        </div>
-        <button type="button"  id="darkModeBtn" class="btn" data-bs-toggle="button" aria-pressed="false">Dark Mode</button>
-        </div>
+                    <ul>
+                        <li><a class="btn btn-primary" href="../html/index.html">Home</a></li>
+                        <li><a class="btn btn-primary" href="../html/character.html">Character</a></li>
+                        <li><a class="btn btn-primary" href="../html/campaigns.html">Campaigns</a></li>
+                        <li><a class="btn btn-primary" href="../html/ruleset.html">Ruleset</a></li>
+                        <li><a class="btn btn-primary" href="#contact-form">Contact</a></li>
+                    </ul>
+                </div>
+                <button type="button" id="darkModeBtn" class="btn" data-bs-toggle="button" aria-pressed="false">Dark
+                    Mode</button>
+            </div>
         </section>
         <section id="image-grid" class="border-class">
-            <div class="card" id="characterPageCard">
+            <div class="card shadow" id="characterPageCard">
                 <h2>Character</h2>
                 <a class="btn btn-primary" href="character.html">Click Here</a>
             </div>
-            <div class="card" id="externalLinkCard">
+            <div class="card shadow" id="externalLinkCard">
                 <h2>Resources</h2>
                 <a class="btn btn-primary" href="https://www.dndbeyond.com/">Click Here</a>
             </div>
-            <div class="card" id="campaignCard">
+            <div class="card shadow" id="campaignCard">
                 <h2>Campaigns</h2>
                 <a class="btn btn-primary" href="../html/campaigns.html">Click Here</a>
             </div>
-            <div class="card" id="videosCard">
+            <div class="card shadow" id="videosCard">
                 <h2>Videos</h2>
-                <a class="btn btn-primary" href="file:///Users/emmafahey/Desktop/Javascript_assignment_submission/html/index.html#videos">Click Here</a>
+                <a class="btn btn-primary"
+                    href="file:///Users/emmafahey/Desktop/Javascript_assignment_submission/html/index.html#videos">Click
+                    Here</a>
             </div>
             <!-- <div class="card backgrounds">
                 <h2>Backgrounds</h2>
@@ -60,11 +63,11 @@
         <section id="videos" class="border-class">
             <div class="card">
                 <div class="card-body">
-                        <iframe class="iframe" src="https://www.youtube.com/embed/P8pLvV3FjPc"
-                            title="The Draw of Destiny | Critical Role | Campaign 3, Episode 1"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                        <!-- <iframe width="700" height="478" src="https://www.youtube.com/embed/P8pLvV3FjPc"
+                    <iframe class="iframe" src="https://www.youtube.com/embed/P8pLvV3FjPc"
+                        title="The Draw of Destiny | Critical Role | Campaign 3, Episode 1"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <!-- <iframe width="700" height="478" src="https://www.youtube.com/embed/P8pLvV3FjPc"
                             title="The Draw of Destiny | Critical Role | Campaign 3, Episode 1"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
                             allowfullscreen></iframe> -->
@@ -72,10 +75,10 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                        <iframe class="iframe" src="https://www.youtube.com/embed/iQE4h505yL0"
-                            title="How to Make a Character Sheet in D&amp;D 5e | Quick Guide"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                            allowfullscreen></iframe>
+                    <iframe class="iframe" src="https://www.youtube.com/embed/iQE4h505yL0"
+                        title="How to Make a Character Sheet in D&amp;D 5e | Quick Guide"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                        allowfullscreen></iframe>
                 </div>
             </div>
             <!-- <div class="card"><iframe width="1206" height="678" src="https://www.youtube.com/embed/iQE4h505yL0"
@@ -88,40 +91,56 @@
                     allowfullscreen></iframe></div> -->
             <div class="card">
                 <div class="card-body">
-                        <iframe class="iframe" src="https://www.youtube.com/embed/2bcAIg7Pzm0"
-                            title="Baldur&#39;s Gate 3 | Full Game Walkthrough | No Commentary"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-                            allowfullscreen></iframe>
+                    <iframe class="iframe" src="https://www.youtube.com/embed/2bcAIg7Pzm0"
+                        title="Baldur&#39;s Gate 3 | Full Game Walkthrough | No Commentary"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </section>
         <section id="contact" class="border-class">
             <div class="card border-class">
-            <fieldset class="text-primary">
-                <legend>Contact us</legend>
-                <form id="contact-form">
-                    <label>Query Relates To Dropdown</label>
-                    <select name="query" class="form-select">
-                        <option value="">--Please choose an option--</option>
-                        <option value="ruleset">Ruleset</option>
-                        <option value="charCreation">Character Creation</option>
-                        <option value="web">Updating website content</option>
-                        <option value="genQuery">General Query</option>
-                    </select><br>
-                    <label>First Name</label>
-                    <input type="text" id="fName"><br>
-                    <label>Last Name</label>
-                    <input type="text" id="lName"><br>
-                    <label>Email</label>
-                    <input type="email" id="clientEmail"><br>
-                    <label>Mobile</label>
-                    <input type="tel" id="clientTel"><br>
-                    <label>Please outline your query below</label>
-                    <textarea id="queryTxtArea"></textarea><br>
-                    <input type="submit" value="Submit" class="btn btn-primary">
-                </form>
-            </fieldset>
-        </div>
+                <div id="card-contact">
+                    <fieldset class="text-primary">
+                        <legend>Contact us</legend>
+                        <form id="contact-form" class="mb-3">
+                            <div class="mb-3">
+                                <label>Query Relates To Dropdown</label>
+                                <select name="query" class="form-select">
+                                    <option value="">--Please choose an option--</option>
+                                    <option value="ruleset">Ruleset</option>
+                                    <option value="charCreation">Character Creation</option>
+                                    <option value="web">Updating website content</option>
+                                    <option value="genQuery">General Query</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="fName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="lName" class="form-label">Last Name</label>
+                                <input type="text" id="lName" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="clientEmail" class="form-label">Email</label>
+                                <input type="email" id="clientEmail" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="clientTel" class="form-label">Mobile</label>
+                                <input type="tel" id="clientTel" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="queryTxtArea" class="form-label">Please outline your query below</label>
+                                <textarea id="queryTxtArea" class="form-control"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <input type="submit" value="Submit" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
         </section>
         <section id="footer" class="text-primary footer border-class">
             <p>Name of The Company</p>

@@ -15,22 +15,22 @@ function submitEvent(event){
         let errorMsg = document.createElement("p");
         errorMsg.innerText = "This Field is Required";
         errorMsg.classList.add("invalid-Form-Input");
-        nameInput.parentNode.insertBefore(errorMsg, nameInput.nextSibling);
+        nameInput.parentNode.insertBefore(errorMsg, nameInput.nextElementSibling);
     } if(!nameLastInput.value){
         let errorMsg = document.createElement("p");
         errorMsg.innerText = "This Field is Required";
         errorMsg.classList.add("invalid-Form-Input");
-        nameLastInput.parentNode.insertBefore(errorMsg, nameLastInput.nextSibling);
+        nameLastInput.parentNode.insertBefore(errorMsg, nameLastInput.nextElementSibling);
     }if(!emailInput.value) {
         let errorMsg = document.createElement("p");
         errorMsg.innerText = "This Field is Required";
         errorMsg.classList.add("invalid-Form-Input");
-        emailInput.parentNode.insertBefore(errorMsg, emailInput.nextSibling);
+        emailInput.parentNode.insertBefore(errorMsg, emailInput.nextElementSibling);
     }if(!telephoneInput.value){
         let errorMsg = document.createElement("p");
         errorMsg.innerText = "This Field is Required";
         errorMsg.classList.add("invalid-Form-Input");
-        telephoneInput.parentNode.insertBefore(errorMsg, telephoneInput.nextSibling);
+        telephoneInput.parentNode.insertBefore(errorMsg, telephoneInput.nextElementSibling);
     }
 }
     //let submit = document.querySelector(`input[value = "submit"]`);

@@ -91,22 +91,12 @@ a {
 .parentClass {
     display: flex;
     margin-left: 30vh;
-    /* align-items: center; */
     justify-content: center;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .childClass {
-        /* margin: auto; */
         display: flex;
-        /* justify-content: center; */
-        /* align-items: center;
-    /* margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
+       
 }
 
 #characterPageCard {
@@ -133,6 +123,10 @@ a {
     background-color: white;
     color: red;
 }
+.invalid-Form-Input-Dark{
+    background-color: red;
+    color: salmon;
+}
 
 .footer>p {
     font-family: 'Oswald', sans-serif;
@@ -144,10 +138,9 @@ h2 {
 }
 
 
-#contact-form {
-    font-family: 'Oswald', sans-serif;
+label{
+    font-size: large;
 }
-
 
 input[button] {
     font-family: 'Oswald', sans-serif;
@@ -156,21 +149,29 @@ input[button] {
 
 fieldset {
     font-family: 'Oswald', sans-serif;
-    height: 100vh;
+    /* height: 100vh; */
     width: 60vh;
     margin: auto;
     justify-content: center;
     align-items: center;
 }
-
+/* fieldset > input{
+    margin-left: 10%;
+} */
 .bold-text {
     font-weight: bold;
 }
 
+/* #secondNav > ul{
+    
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+/* } */
 
 .card {
+    padding: 10%, 0;
     background-color: #f6f5f5;
-    height: 70vh;
+    height: 90vh;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -189,6 +190,28 @@ fieldset {
     margin-bottom: 2vh;
 
 }
+.card > #card-contact{
+    height: 90vh;
+    width: 70vw;
+    border: solid 1px black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+#card-Second-Nav{
+    border: solid 1px black;
+    display: flex;
+    height: 30vh;
+    width: 15vw;
+    border: solid 1px black;
+    border-radius: 20px;
+    justify-content: first baseline;
+}
+#card-Second-Nav > ul{
+    flex-direction: column;
+    flex-wrap: wrap; 
+ }
 
 .card.campaign.tyrannyOfDragons {
     background-image: url(../images/tyrannyOfDragons\ copy.png);
