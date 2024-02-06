@@ -16,14 +16,16 @@ body {
 
 .canvas {
     background-color: black;
-    margin: auto;
+    /* margin: auto; */
+    /* width: 50%; */
+    /* height: 20%; */
 }
 
 .mainNav {
     margin: auto;
 }
 .header{
-    display: flex;
+   margin: auto;
 }
 
 ul {
@@ -68,6 +70,7 @@ a {
     display: inline-flex;
     margin-left: 30%;
     margin-top: 5%;
+    font-family: 'Oswald', sans-serif;
 }
 
 .button-dark {
@@ -82,6 +85,7 @@ a {
 
 .btn {
     border: 1px solid black;
+    font-family: 'Oswald', sans-serif;
 }
 
 .mainNavDark {
@@ -122,10 +126,12 @@ a {
 .invalid-Form-Input {
     background-color: white;
     color: red;
+    font-family: 'Oswald', sans-serif;
 }
 .invalid-Form-Input-Dark{
     background-color: red;
     color: salmon;
+    font-family: 'Oswald', sans-serif;
 }
 
 .footer>p {
@@ -144,6 +150,7 @@ label{
 
 input[button] {
     font-family: 'Oswald', sans-serif;
+    
 }
 
 

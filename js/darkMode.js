@@ -11,11 +11,11 @@
 //     darkToggleRules.addEventListener("click", darkMode);
 // }
 
-
-document.addEventListener("DOMContentLoaded", checkDarkActive);
-window.onload = function(){
-    init();
-}
+document.addEventListener("DOMContentLoaded", init);
+// document.addEventListener("DOMContentLoaded", checkDarkActive);
+// window.onload = function(){
+//     init();
+// }
 
 function init() {
     let darkToggleHome = document.getElementById("darkModeBtn");
