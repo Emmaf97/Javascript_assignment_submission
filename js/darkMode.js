@@ -50,7 +50,7 @@ function checkDarkActive(){
 
 function darkMode() {
     let {btnElements} = getIndexDocElements();
-    for (i = 0; i < btnElements.length; i++) {
+    for (let i = 0; i < btnElements.length; i++) {
        let darkModeAdded =  btnElements[i].classList.toggle("button-dark");
        if(darkModeAdded){
         toggleCheck = true;
@@ -66,6 +66,10 @@ function darkMode() {
        }
     }
     darkModeCommonElements();
+    cardDark();
+    h2Dark();
+    pDark();
+    labelDark();
     //checkDarkActive();
 
 
@@ -104,37 +108,77 @@ function darkMode() {
 // }
 
 function darkModeCommonElements(){
-    let { body, footer} = getCommonDocElements();
+    let { body} = getCommonDocElements();
     body.classList.toggle("body-dark");
-    footer.classList.toggle("text-primaryDark");
+    // footer.classList.toggle("text-primaryDark");
+
 }
-
-function darkModeRules() {
-    let { darkToggleRules, body, btnElement, footer } = getRulesDocElements();
-    //let darkToggleRules = document.getElementById("darkModeBtnRules");
-
-    if (btnElement) {
-        if (!darkToggleRules.classList.contains("active")) {
-            console.log("class active");
-            darkToggleRules.classList.remove("active");
-            changeFootBdy(body, footer);
-            changeMainNav(mainNav);
-        } else {
-            console.log("No Class is active");
-            revertFootBdy(body, footer);
-            revertMainNav(mainNav);
-            darkToggleRules.classList.add("active");
-        }
+function cardDark(){
+    let {card} = getCommonDocElements();
+    for(let j=0; j < card.length; j++){
+        card[j].classList.toggle("card-dark");
     }
 }
+
+function h2Dark(){
+    let {h2} = getCommonDocElements();
+    for(let h=0; h < h2.length; h++){
+        h2[h].classList.toggle("h2-dark");
+     }
+    // h2.classList.toggle("h2-dark");
+}
+
+function pDark(){
+    let {p} = getCommonDocElements();
+    for(let n=0; n < p.length; n++){
+        p[n].classList.toggle("p-dark");
+     }
+}
+
+
+function labelDark(){
+    let {label, legend} = uniqueDocElements();
+    for(let k=0; k < label.length; k++){
+        label[k].classList.toggle("label-dark");
+    }
+    legend.classList.toggle("legend-dark");
+}
+
+// function darkModeRules() {
+//     let { darkToggleRules, body, btnElement, footer } = getRulesDocElements();
+//     //let darkToggleRules = document.getElementById("darkModeBtnRules");
+
+//     if (btnElement) {
+//         if (!darkToggleRules.classList.contains("active")) {
+//             console.log("class active");
+//             darkToggleRules.classList.remove("active");
+//             changeFootBdy(body, footer);
+//             changeMainNav(mainNav);
+//         } else {
+//             console.log("No Class is active");
+//             revertFootBdy(body, footer);
+//             revertMainNav(mainNav);
+//             darkToggleRules.classList.add("active");
+//         }
+//     }
+// }
 
 function getCommonDocElements(){
     let toggleHome = document.getElementById("darkModeBtn");
     let body = document.querySelector("body");
+    let card = document.querySelectorAll(".card");
+    let h2 = document.querySelectorAll("h2");
+    let p = document.querySelectorAll("p");
     let btnElement = document.querySelector(".btn");
     let footer = document.querySelector("#footer");
     let mainNav = document.querySelectorAll(".mainNav");
-    return { toggleHome, body, btnElement,footer, mainNav };
+    return { toggleHome, body, card, h2, p, btnElement,footer, mainNav };
+}
+
+function uniqueDocElements(){
+    let label = document.querySelectorAll("label");
+    let legend = document.querySelector("legend");
+    return { label, legend };
 }
 
 

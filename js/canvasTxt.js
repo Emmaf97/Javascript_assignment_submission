@@ -44,7 +44,7 @@ class Effect{
         });
     }
     displayText(text){
-        this.context.fillStyle = "red";
+        this.context.fillStyle = "#0d6efd";
         this.context.textAlign = "center";
         this.context.textBaseline = "middle";
         this.context.font = this.fontSize + "px Oswald"

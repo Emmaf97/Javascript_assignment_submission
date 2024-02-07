@@ -142,12 +142,22 @@ a {
 h2 {
     font-family: 'Oswald', sans-serif;
 }
-
+.h2-dark{
+    color: white;
+}
+.p-dark{
+    color: orangered;
+}
 
 label{
     font-size: large;
 }
-
+.label-dark{
+    color: orangered;
+}
+.legend-dark{
+    color: white
+}
 input[button] {
     font-family: 'Oswald', sans-serif;
     
@@ -183,6 +193,11 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.card-dark{
+    background-color: black;
+    border: solid 1px grey;
+    /* border-style: solid grey; */
 }
 
 .card-body {
