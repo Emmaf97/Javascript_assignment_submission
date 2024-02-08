@@ -1,0 +1,256 @@
+.body-dark {
+    background-color: black;
+}
+
+body {
+    background-color: white;
+}
+
+.border-class {
+    border: 1px solid red;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.canvas {
+    background-color: white;
+    /* background-color: black; */
+    /* margin: auto; */
+    /* width: 50%; */
+    /* height: 20%; */
+}
+.canvas-dark{
+    background-color: black;
+    /* color: orangered; */
+}
+
+.mainNav {
+    margin: auto;
+}
+.header{
+   margin: auto;
+}
+
+ul {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+ul>li {
+    text-decoration: none;
+    font-size: large;
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+li::marker {
+    content: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#image-grid {
+    margin: auto;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+.iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.text-primaryDark {
+    color: white;
+}
+
+#darkModeBtn {
+    display: inline-flex;
+    margin-left: 30%;
+    margin-top: 5%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.button-dark {
+    background-color: orangered;
+}
+
+.btn.active {
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.btn {
+    border: 1px solid black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.mainNavDark {
+    color: white;
+}
+
+.parentClass {
+    display: flex;
+    margin-left: 30vh;
+    justify-content: center;
+}
+
+.childClass {
+        display: flex;
+       
+}
+
+#characterPageCard {
+    width: 20vw;
+}
+
+#externalLinkCard {
+    width: 20vw;
+}
+
+#videosCard {
+    width: 20vw;
+}
+
+#backgroundsCard {
+    width: 20vw;
+}
+
+#campaignCard {
+    width: 20vw;
+}
+
+.invalid-Form-Input {
+    background-color: white;
+    color: red;
+    font-family: 'Oswald', sans-serif;
+}
+.invalid-Form-Input-Dark{
+    background-color: red;
+    color: salmon;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer>p {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+.h2-dark{
+    color: white;
+}
+.p-dark{
+    color: orangered;
+}
+
+label{
+    font-size: large;
+}
+.label-dark{
+    color: orangered;
+}
+.legend-dark{
+    color: white
+}
+input[button] {
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+
+fieldset {
+    font-family: 'Oswald', sans-serif;
+    /* height: 100vh; */
+    width: 60vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+/* fieldset > input{
+    margin-left: 10%;
+} */
+.bold-text {
+    font-weight: bold;
+}
+
+/* #secondNav > ul{
+    
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+/* } */
+
+.card {
+    padding: 10%, 0;
+    background-color: #f6f5f5;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-dark{
+    background-color: black;
+    border: solid 1px grey;
+    /* border-style: solid grey; */
+}
+
+.card-body {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.card.campaign {
+    height: 70vh;
+    width: 70vw;
+    margin-bottom: 2vh;
+
+}
+.card > #card-contact{
+    height: 90vh;
+    width: 70vw;
+    border: solid 1px black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+#card-Second-Nav{
+    border: solid 1px black;
+    display: flex;
+    height: 30vh;
+    width: 15vw;
+    border: solid 1px black;
+    border-radius: 20px;
+    justify-content: first baseline;
+}
+#card-Second-Nav > ul{
+    flex-direction: column;
+    flex-wrap: wrap; 
+ }
+
+.card.campaign.tyrannyOfDragons {
+    background-image: url(../images/tyrannyOfDragons\ copy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.characterPage {
+    background-color: black;
+}
+
+img {
+    width: 40vh;
+    height: 40vh;
+}
