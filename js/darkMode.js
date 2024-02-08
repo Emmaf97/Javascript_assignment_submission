@@ -70,6 +70,7 @@ function darkMode() {
     h2Dark();
     pDark();
     labelDark();
+    canvasDark();
     //checkDarkActive();
 
 
@@ -193,6 +194,17 @@ function getIndexDocElements() {
     // return { toggleHome, body, btnElement, btnElements, footer, mainNav };
     return {btnElements};
 
+}
+function canvasDark(){
+    const canvas = document.querySelector(".canvas");
+    let ctx = canvas.getContext("2d");
+    if(!canvas.classList.contains("canvas-dark")){
+        canvas.classList.toggle("canvas-dark");
+        ctx.fillStyle = "orangered";
+    } else {
+        canvas.classList.toggle("canvas-dark");
+        ctx.fillStyle = "#0d6efd";
+    }
 }
 // function getRulesDocElements() {
 //     let darkToggleRules = document.getElementById("darkModeBtnRules");

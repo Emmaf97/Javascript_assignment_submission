@@ -15,10 +15,15 @@ body {
 }
 
 .canvas {
-    background-color: black;
+    background-color: white;
+    /* background-color: black; */
     /* margin: auto; */
     /* width: 50%; */
     /* height: 20%; */
+}
+.canvas-dark{
+    background-color: black;
+    /* color: orangered; */
 }
 
 .mainNav {
