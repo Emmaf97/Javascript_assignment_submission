@@ -1,4 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+document.addEventListener("DOMContentLoaded",loadCanvas );
+function loadCanvas() {
     const canvas = document.querySelector(".canvas");
     const section = document.querySelector("#header");
     const ctx = canvas.getContext("2d");
@@ -61,7 +63,11 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
         displayText(text) {
-            this.context.fillStyle = "#0d6efd";
+            if(localStorage.getItem("dark-mode") === "true"){
+                this.context.fillStyle = "orangered";
+            } else{
+                this.context.fillStyle = "#0d6efd";
+            }
             this.context.textAlign = "center";
             this.context.textBaseline = "middle";
             this.context.font = this.fontSize + "px Oswald"
@@ -108,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //console.log("animating");
     }
     animate();
-});
+};
 
 //version 1
 // function init() {

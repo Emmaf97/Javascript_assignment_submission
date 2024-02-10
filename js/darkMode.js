@@ -30,10 +30,12 @@ function darkMode() {
        if(!darkModeAdded){
         toggleCheck = false;
         localStorage.setItem("dark-mode", toggleCheck);
+        // canvasDark();
        }
        else{
         toggleCheck = true;
         localStorage.setItem("dark-mode", toggleCheck);
+        //canvasDark();
        }
     }
     if(label && legend === null){
@@ -117,10 +119,10 @@ function getIndexDocElements() {
 function canvasDark(){
     const canvas = document.querySelector(".canvas");
     let ctx = canvas.getContext("2d");
-    if(!canvas.classList.contains("canvas-dark")){
+    if(localStorage.getItem("dark-mode") === "true"){
         canvas.classList.toggle("canvas-dark");
         ctx.fillStyle = "orangered";
-    } else {
+    } else{
         canvas.classList.toggle("canvas-dark");
         ctx.fillStyle = "#0d6efd";
     }
