@@ -1,6 +1,6 @@
 
-document.addEventListener("DOMContentLoaded",loadCanvas );
-function loadCanvas() {
+//document.addEventListener("DOMContentLoaded",loadCanvas );
+window.addEventListener("DOMContentLoaded",function (){
     const canvas = document.querySelector(".canvas");
     const section = document.querySelector("#header");
     const ctx = canvas.getContext("2d");
@@ -8,8 +8,6 @@ function loadCanvas() {
     canvas.height = section.clientHeight;
 
     const text = "D&DFN";
-    // const textX = canvas.width / 2 - 100;
-    // const textY = canvas.height / 2 +20;
 
     class Particle {
         constructor(effect, x, y, color) {
@@ -27,7 +25,7 @@ function loadCanvas() {
             this.force = 0;
             this.angle = 0;
             this.distance = 0;
-            this.friction = Math.random() * 0.6 + 0.15;
+            this.friction = Math.random() * 0.2 + 0.15;
             this.ease = Math.random() * 0.1 + 0.005;
         }
         draw() {
@@ -36,7 +34,16 @@ function loadCanvas() {
         }
 
         update() {
-            this.x += (this.originX - this.x) * this.ease;
+            this.dx = this.effect.mouse.x - this.x;
+            this.dy = this.effect.mouse.y - this.y;
+            this.distance = this.dx * this.dx + this.dy * this.dy;
+            this.force = -this.effect.mouse.radius / this.distance;
+            if(this.distance < this.effect.mouse.radius){
+                this.angle = Math.atan2(this.dy, this.dx);
+                this.vx += this.force * Math.cos(this.angle);
+                this.vy += this.force * Math.sin(this.angle);
+            }
+            this.x += (this.vx *= this.friction) + (this.originX - this.x) * this.ease;
             this.y += (this.originY - this.y) * this.ease;
         }
     }
@@ -59,7 +66,6 @@ function loadCanvas() {
             document.addEventListener("mousemove", (e) => {
                 this.mouse.x = e.x;
                 this.mouse.y = e.y;
-                //console.log(this.mouse.x, this.mouse.y);
             });
         }
         displayText(text) {
@@ -92,45 +98,33 @@ function loadCanvas() {
                     }
                 }
             }
-            console.log(this.particles)
-            //console.log(pixels);
         }
         render() {
             this.particles.forEach(particle => {
                 particle.update();
                 particle.draw();
-            })
+            });
         }
+        // resize(){
+        // canvas.width = section.clientWidth;
+        // canvas.height = section.clientHeight;
+        // this.textX = this.clientWidth / 2;
+        // this.textY = this.clientHeight/ 2;
+        // effect.displayText(text);
+        //     }
     }
 
     const effect = new Effect(ctx, canvas.width, canvas.height);
-    //console.log(effect);
     effect.displayText(text);
 
     function animate() {
         ctx.clearRect(0, 0, canvas.width,canvas.height);
         effect.render();
         requestAnimationFrame(animate);
-        //console.log("animating");
     }
     animate();
-};
 
-//version 1
-// function init() {
-//     const canvas = document.querySelector(".canvas");
-//     const window = document.querySelector("#header");
-//     const ctx = canvas.getContext("2d");
-//     canvas.width = window.clientWidth;
-//     canvas.height = window.clientHeight;
-
-//     const text = "D&DFN";
-//     const textX = canvas.width / 2 - 100;
-//     const textY = canvas.height / 2 +20;
-//     console.log(ctx);
-//     ctx.fillStyle = 'white';
-//     ctx.strokeStyle = "red";
-//     ctx.font = "80px Oswald"
-//     ctx.fillText(text, textX, textY);
-//     // ctx.strokeStyle(text, textX, textY);
-// }
+    // window.addEventListener("resize", function(){
+    //     effect.resize();
+    // });
+});

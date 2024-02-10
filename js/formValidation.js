@@ -4,33 +4,14 @@ function init() {
     let form = document.getElementById("contact-form");
     form.addEventListener("submit", submitEvent);
     let nameBox = document.getElementById("fName");
-    //NEED TO UPDATE CODE FOR INVALIDFNAME
-    //nameBox.addEventListener("focusout", focusOutName);
     nameBox.addEventListener("focusout", invalidFName);
     let lastNameBox = document.getElementById("lName");
-    //NEED TO UPDATE CODE FOR INVALIDLNAME
-    //lastNameBox.addEventListener("focusout", focusOutName);
     lastNameBox.addEventListener("focusout", invalidLName);
     let emailBox = document.getElementById("clientEmail");
     emailBox.addEventListener("focusout", invalidEmail);
     let telephoneBox = document.getElementById("clientTel");
     telephoneBox.addEventListener("focusout", invalidTel);
 }
-//if( isEmpty( fnameBox ) ){ errorMsg = createError(); insert(errorMsg);}
-//First draft... FROM
-// if( isEmpty( fnameBox ) ){
-// 	errorMsg = createError();
-// 	insert(errorMsg);
-// }
-
-
-//Second draft... TO
-// if( isEmpty( fnameBox ) ){
-// 	if( notExists(fNameErrorMessage) ){
-// 		errorMsg = createError();
-// 		insert(errorMsg);
-// 	}
-// }
 
 function submitEvent(event) {
     event.preventDefault();
@@ -93,7 +74,6 @@ function submitEvent(event) {
         else if (telephoneInput.value) {
             removeError(errorMsg);
         }
-        // removeError(nameInput, nameLastInput, emailInput, telephoneInput);
     }
 }
 
@@ -119,13 +99,8 @@ function isEmpty() {
         console.log("no value detected for email and mobile");
         return true;
     }
-    // else if(nameInput.value || nameLastInput.value || emailInput.value || telephoneInput.value){
-    //     console.log("value detected");
-    //     return false;
-    // }
 }
 function createError(nameInput, nameLastInput, emailInput, telephoneInput) {
-    // let{nameInput, nameLastInput, emailInput, telephoneInput} = getFormElements();
     let errorMsg = document.createElement("p");
     errorMsg.innerText = "This Field is Required";
     errorMsg.classList.add("invalid-Form-Input");
@@ -142,12 +117,8 @@ function createError(nameInput, nameLastInput, emailInput, telephoneInput) {
     if (telephoneInput) {
         telephoneInput.parentNode.insertBefore(errorMsg, telephoneInput.nextElementSibling);
     }
-    // nameLastInput.parentNode.insertBefore(errorMsg, nameLastInput.nextElementSibling);
-    // emailInput.parentNode.insertBefore(errorMsg, emailInput.nextElementSibling);
-    // telephoneInput.parentNode.insertBefore(errorMsg, telephoneInput.nextElementSibling);
 }
 function removeError(errorMsg) {
-    //let errorMsg = document.getElementById("p");
     errorMsg.remove();
 }
 function getFormElements() {
@@ -158,44 +129,6 @@ function getFormElements() {
 
     return { nameInput, nameLastInput, emailInput, telephoneInput };
 }
-// function submitEvent(event) {
-//     event.preventDefault();
-//     let nameInput = document.getElementById("fName");
-//     let nameLastInput = document.getElementById("lName");
-//     let emailInput = document.getElementById("clientEmail");
-//     let telephoneInput = document.getElementById("clientTel");
-//     if (!nameInput.value) {
-//         let errorMsg = document.createElement("p");
-//         errorMsg.innerText = "This Field is Required";
-//         errorMsg.classList.add("invalid-Form-Input");
-//         nameInput.parentNode.insertBefore(errorMsg, nameInput.nextElementSibling);
-//     } if (!nameLastInput.value) {
-//         let errorMsg = document.createElement("p");
-//         errorMsg.innerText = "This Field is Required";
-//         errorMsg.classList.add("invalid-Form-Input");
-//         nameLastInput.parentNode.insertBefore(errorMsg, nameLastInput.nextElementSibling);
-//     } if (!emailInput.value) {
-//         let errorMsg = document.createElement("p");
-//         errorMsg.innerText = "This Field is Required";
-//         errorMsg.classList.add("invalid-Form-Input");
-//         emailInput.parentNode.insertBefore(errorMsg, emailInput.nextElementSibling);
-//     } if (!telephoneInput.value) {
-//         let errorMsg = document.createElement("p");
-//         errorMsg.innerText = "This Field is Required";
-//         errorMsg.classList.add("invalid-Form-Input");
-//         telephoneInput.parentNode.insertBefore(errorMsg, telephoneInput.nextElementSibling);
-//     }
-// }
-
-// function focusOutName(e) {
-//     // let emailInput = document.getElementById("clientEmail");
-//     if (e.target.nextElementSibling) {
-//         e.target.nextElementSibling.remove()
-//     }
-//     //  else if(emailInput.nextElementSibling){
-//     //     emailInput.nextElementSibling.remove();
-//     // }
-// }
 
 function invalidFName() {
     let nameInput = document.getElementById("fName");
@@ -261,7 +194,6 @@ function invalidTel() {
     if (!/\d/.test(telephoneInput.value)) {
         if (!errorMsg) {
             errorMsg = document.createElement("p");
-            // errorMsg.innerText = "This field requires numeric input";
             errorMsg.classList.add("invalid-Form-Input");
             telephoneInput.parentNode.insertBefore(errorMsg, telephoneInput.nextElementSibling);
         }
@@ -269,7 +201,6 @@ function invalidTel() {
     } else if (telephoneInput.value.length < 10) {
         if (!errorMsg) {
             errorMsg = document.createElement("p");
-            // errorMsg.innerText = "This field requires numeric input";
             errorMsg.classList.add("invalid-Form-Input");
             telephoneInput.parentNode.insertBefore(errorMsg, telephoneInput.nextElementSibling);
         }
@@ -280,5 +211,3 @@ function invalidTel() {
         }
     }
 }
-//let submit = document.querySelector(`input[value = "submit"]`);
-

@@ -1,11 +1,3 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//     if (document.getElementById("darkModeBtn")) {
-//         initIndex();
-//     } else if (document.getElementById("darkModeBtnRules")) {
-//         initRules();
-//     }
-// });
-
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
@@ -30,12 +22,10 @@ function darkMode() {
        if(!darkModeAdded){
         toggleCheck = false;
         localStorage.setItem("dark-mode", toggleCheck);
-        // canvasDark();
        }
        else{
         toggleCheck = true;
         localStorage.setItem("dark-mode", toggleCheck);
-        //canvasDark();
        }
     }
     if(label && legend === null){
@@ -58,7 +48,6 @@ function darkModeCommonElements(){
     let { body, toggleHome} = getCommonDocElements();
     body.classList.toggle("body-dark");
     toggleHome.classList.add("active");
-    // footer.classList.toggle("text-primaryDark");
 
 }
 function cardDark(){
@@ -73,7 +62,6 @@ function h2Dark(){
     for(let h=0; h < h2.length; h++){
         h2[h].classList.toggle("h2-dark");
      }
-    // h2.classList.toggle("h2-dark");
 }
 
 function pDark(){
