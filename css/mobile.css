@@ -34,17 +34,18 @@ body {
 }
 
 ul {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
+    display: inline;
+    margin: auto;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     flex-direction: row;
 }
 
 ul>li {
     text-decoration: none;
     font-size: large;
-    margin-right: 7%;
-    margin-left: 7%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 li::marker {
@@ -58,8 +59,9 @@ a {
 #image-grid {
     margin: auto;
     width: 100%;
-    display: inline-flex;
-    flex-wrap: nowrap;
+    display: inline;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
 }
 
 .iframe {
@@ -72,9 +74,10 @@ a {
 }
 
 #darkModeBtn {
-    display: inline-flex;
-    margin-left: 30%;
-    margin-top: 5%;
+    display: inline;
+    /* margin: auto; */
+    margin-left: 37vw;
+    margin-top: 2%;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -98,8 +101,8 @@ a {
 }
 
 .parentClass {
-    display: flex;
-    margin-left: 30vh;
+    /* display: flex;
+    margin-left: 30vh; */
     justify-content: center;
 }
 
@@ -109,23 +112,26 @@ a {
 }
 
 #characterPageCard {
-    width: 20vw;
+    width: 90vw;
 }
 
 #externalLinkCard {
-    width: 20vw;
+    width: 90vw;
 }
 
 #videosCard {
-    width: 20vw;
+    width: 90vw;
 }
 
 #backgroundsCard {
-    width: 20vw;
+    width: 90vw;
 }
 
 #campaignCard {
-    width: 20vw;
+    width: 90vw;
+}
+#characterCreation{
+    width: 95vw;
 }
 
 .invalid-Form-Input {
@@ -163,19 +169,22 @@ label{
 .legend-dark{
     color: white
 }
-input[button] {
+/* input[button] {
     font-family: 'Oswald', sans-serif;
     
+} */
+input[type="submit"]{
+    margin-left: 25vw;
 }
 
 
 fieldset {
     font-family: 'Oswald', sans-serif;
     /* height: 100vh; */
-    width: 60vh;
-    margin: auto;
+    width: 35vh;
+    /* margin: auto;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 /* fieldset > input{
     margin-left: 10%;
@@ -193,7 +202,7 @@ fieldset {
 .card {
     padding: 10%, 0;
     background-color: #f6f5f5;
-    height: 90vh;
+    height: 56vh;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -217,9 +226,15 @@ fieldset {
     margin-bottom: 2vh;
 
 }
-.card > #card-contact{
-    height: 90vh;
-    width: 70vw;
+#card-contact{
+    height: 72vh;
+    width: 93vw;
+}
+#card-contact-body{
+    height: 72vh;
+    width: 93vw;
+    /* height: 90vh;
+    width: 70vw; */
     border: solid 1px black;
     border-radius: 20px;
     display: flex;
