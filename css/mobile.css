@@ -16,28 +16,23 @@ body {
 
 .canvas {
     background-color: white;
-    /* background-color: black; */
-    /* margin: auto; */
-    /* width: 50%; */
-    /* height: 20%; */
 }
-.canvas-dark{
+
+.canvas-dark {
     background-color: black;
-    /* color: orangered; */
 }
 
 .mainNav {
     margin: auto;
 }
-.header{
-   margin: auto;
+
+.header {
+    margin: auto;
 }
 
 ul {
     display: inline;
-    margin: auto;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+    padding-left: 0;
     flex-direction: row;
 }
 
@@ -60,8 +55,6 @@ a {
     margin: auto;
     width: 100%;
     display: inline;
-    /* flex-direction: row;
-    flex-wrap: nowrap; */
 }
 
 .iframe {
@@ -75,10 +68,10 @@ a {
 
 #darkModeBtn {
     display: inline;
-    /* margin: auto; */
     margin-left: 37vw;
     margin-top: 2%;
     font-family: 'Oswald', sans-serif;
+    border: 1px solid black
 }
 
 .button-dark {
@@ -96,19 +89,36 @@ a {
     font-family: 'Oswald', sans-serif;
 }
 
+.btn-nav {
+    padding-left: 39vw;
+    padding-right: 42vw;
+}
+
+.btn-nav-short {
+    padding-left: 40vw;
+    padding-right: 44vw;
+}
+
+.btn-nav-long {
+    padding-left: 39vw;
+    padding-right: 40%;
+}
+
+.btn-nav-extra-long{
+    padding-left: 39vw;
+    padding-right: 42%;
+}
+
 .mainNavDark {
     color: white;
 }
 
 .parentClass {
-    /* display: flex;
-    margin-left: 30vh; */
     justify-content: center;
 }
 
 .childClass {
-        display: flex;
-       
+    display: flex;
 }
 
 #characterPageCard {
@@ -135,8 +145,10 @@ a {
     width: 93vw;
     height: 13vh;
 }
-#characterCreation{
-    width: 93vw;;
+
+#characterCreation {
+    width: 93vw;
+    ;
 }
 
 .invalid-Form-Input {
@@ -144,7 +156,8 @@ a {
     color: red;
     font-family: 'Oswald', sans-serif;
 }
-.invalid-Form-Input-Dark{
+
+.invalid-Form-Input-Dark {
     background-color: red;
     color: salmon;
     font-family: 'Oswald', sans-serif;
@@ -155,59 +168,53 @@ a {
     text-align: center;
     /* color: #0d6efd; */
 }
-.p-dark-footer{
+
+.p-dark-footer {
     color: orangered;
 }
+
 h2 {
     font-family: 'Oswald', sans-serif;
 }
-.h2-dark{
+
+.h2-dark {
     color: orangered;
 }
-.p-dark{
+
+.p-dark {
     color: white;
 }
 
-label{
+label {
     font-size: large;
 }
-.label-dark{
+
+.label-dark {
     color: orangered;
 }
-.legend-dark{
+
+.legend-dark {
     color: white
 }
-/* input[button] {
-    font-family: 'Oswald', sans-serif;
-    
-} */
-input[type="submit"]{
+
+input[type="submit"] {
     margin-left: 25vw;
 }
 
 
 fieldset {
     font-family: 'Oswald', sans-serif;
-    /* height: 100vh; */
+
     width: 35vh;
-    /* margin: auto;
-    justify-content: center;
-    align-items: center; */
+
 }
-/* fieldset > input{
-    margin-left: 10%;
-} */
+
 .bold-text {
     font-weight: bold;
     font-style: italic;
     color: orangered;
 }
 
-/* #secondNav > ul{
-    
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-/* } */
 
 .card {
 
@@ -215,36 +222,38 @@ fieldset {
     height: 56vh;
     margin-bottom: 2vh;
     margin-top: 2vh;
-    /* margin: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.card-dark{
+
+.card-dark {
     background-color: black;
     border: solid 1px grey;
-    /* border-style: solid grey; */
 }
-.name-card-dark{
+
+.name-card-dark {
     background-color: black;
 }
+
 .card-body {
     display: block;
     margin: auto;
     width: 90%;
 }
-.card-video-section{
+
+.card-video-section {
     height: 27vh;
     margin-bottom: 2vh;
     margin-top: 2vh;
-    /* margin: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.name-card{
+
+.name-card {
     padding: 10%, 0;
-    height:  8vh;
+    height: 8vh;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -258,22 +267,23 @@ fieldset {
     margin-top: 2vh;
 
 }
-#card-contact{
+
+#card-contact {
     height: 72vh;
     width: 93vw;
 }
-#card-contact-body{
+
+#card-contact-body {
     height: 72vh;
     width: 93vw;
-    /* height: 90vh;
-    width: 70vw; */
     border: solid 1px black;
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    
+
 }
-#card-Second-Nav{
+
+#card-Second-Nav {
     border: solid 1px black;
     display: flex;
     height: 30vh;
@@ -282,22 +292,12 @@ fieldset {
     border-radius: 20px;
     justify-content: first baseline;
 }
-#card-Second-Nav > ul{
-    flex-direction: column;
-    flex-wrap: wrap; 
- }
 
-/* .card.campaign.tyrannyOfDragons {
-    background-image: url(../images/tyrannyOfDragons\ copy.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-/* .tyrannyOfDragons {
-    background-image: url(../images/tyrannyOfDragons\ copy.png);
-    /* background: ; */
-    /* background-repeat: no-repeat;
-    background-size: cover;
-}  */
+#card-Second-Nav>ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 
 
 .characterPage {
