@@ -112,26 +112,31 @@ a {
 }
 
 #characterPageCard {
-    width: 90vw;
+    width: 93vw;
+    height: 13vh;
 }
 
 #externalLinkCard {
-    width: 90vw;
+    width: 93vw;
+    height: 13vh;
 }
 
 #videosCard {
-    width: 90vw;
+    width: 93vw;
+    height: 13vh;
 }
 
 #backgroundsCard {
-    width: 90vw;
+    width: 93vw;
+    height: 13vh;
 }
 
 #campaignCard {
-    width: 90vw;
+    width: 93vw;
+    height: 13vh;
 }
 #characterCreation{
-    width: 95vw;
+    width: 93vw;;
 }
 
 .invalid-Form-Input {
@@ -148,16 +153,19 @@ a {
 .footer>p {
     font-family: 'Oswald', sans-serif;
     text-align: center;
+    /* color: #0d6efd; */
 }
-
+.p-dark-footer{
+    color: orangered;
+}
 h2 {
     font-family: 'Oswald', sans-serif;
 }
 .h2-dark{
-    color: white;
+    color: orangered;
 }
 .p-dark{
-    color: orangered;
+    color: white;
 }
 
 label{
@@ -191,6 +199,8 @@ fieldset {
 } */
 .bold-text {
     font-weight: bold;
+    font-style: italic;
+    color: orangered;
 }
 
 /* #secondNav > ul{
@@ -200,10 +210,12 @@ fieldset {
 /* } */
 
 .card {
-    padding: 10%, 0;
+
     background-color: #f6f5f5;
     height: 56vh;
-    margin: auto;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    /* margin: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,17 +225,37 @@ fieldset {
     border: solid 1px grey;
     /* border-style: solid grey; */
 }
-
+.name-card-dark{
+    background-color: black;
+}
 .card-body {
     display: block;
     margin: auto;
     width: 90%;
 }
+.card-video-section{
+    height: 27vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-card{
+    padding: 10%, 0;
+    height:  8vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .card.campaign {
-    height: 70vh;
-    width: 70vw;
+    height: 86vh;
+    width: 94vw;
     margin-bottom: 2vh;
+    margin-top: 2vh;
 
 }
 #card-contact{
@@ -255,11 +287,18 @@ fieldset {
     flex-wrap: wrap; 
  }
 
-.card.campaign.tyrannyOfDragons {
+/* .card.campaign.tyrannyOfDragons {
     background-image: url(../images/tyrannyOfDragons\ copy.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
+/* .tyrannyOfDragons {
+    background-image: url(../images/tyrannyOfDragons\ copy.png);
+    /* background: ; */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+}  */
+
 
 .characterPage {
     background-color: black;

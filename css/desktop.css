@@ -204,6 +204,9 @@ fieldset {
     border: solid 1px grey;
     /* border-style: solid grey; */
 }
+.name-card-dark{
+    background-color: black;
+}
 
 .card-body {
     display: block;

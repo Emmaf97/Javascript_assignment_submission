@@ -105,9 +105,9 @@ window.addEventListener("DOMContentLoaded",function (){
                 particle.draw();
             });
         }
-        // resize(){
-        // canvas.width = section.clientWidth;
-        // canvas.height = section.clientHeight;
+        // resize(width,height){
+        // canvas.width = width;
+        // canvas.height = height;
         // this.textX = this.clientWidth / 2;
         // this.textY = this.clientHeight/ 2;
         // effect.displayText(text);
@@ -125,6 +125,8 @@ window.addEventListener("DOMContentLoaded",function (){
     animate();
 
     // window.addEventListener("resize", function(){
-    //     effect.resize();
+    //     canvas.width = section.clientWidth;
+    //     canvas.height = section.clientHeight;
+    //     effect.resize(canvas.width,canvas.height);
     // });
 });
