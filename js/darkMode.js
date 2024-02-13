@@ -49,9 +49,8 @@ function darkMode() {
         }
 
 function darkModeCommonElements(){
-    let { body, footer, toggleHome} = getCommonDocElements();
+    let { body, toggleHome} = getCommonDocElements();
     body.classList.toggle("body-dark");
-    // footer.classList.add("p-dark");
     toggleHome.classList.add("active");
 
 }
@@ -59,13 +58,11 @@ function cardDark(){
     let {card} = getCommonDocElements();
     for(let j=0; j < card.length; j++){
         card[j].classList.toggle("card-dark");
-        // nameCard[j].classList.toggle("card-dark");
     }
 }
 function nameCardDark(){
     let {nameCard} = getCommonDocElements();
     for(let t=0; t < nameCard.length; t++){
-        // nameCard[t].classList.remove("name-card");
         nameCard[t].classList.toggle("name-card-dark");
      }
 }
@@ -81,7 +78,6 @@ function pDark(){
     let {p} = getCommonDocElements();
     for(let n=0; n < p.length; n++){
         p[n].classList.toggle("p-dark");
-        console.log("p");
     }
 }
 function footerDark(){
@@ -111,7 +107,6 @@ function getCommonDocElements(){
     let btnElement = document.querySelector(".btn");
     let footer = document.querySelector("#footer");
     let mainNav = document.querySelectorAll(".mainNav");
-    //let pBold = document.querySelectorAll(".bold-text");
     return { toggleHome, body, card, h2, p, btnElement, footer, nameCard, mainNav };
 }
 

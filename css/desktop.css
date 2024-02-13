@@ -146,14 +146,24 @@ a {
 
 h2 {
     font-family: 'Oswald', sans-serif;
-}
-.h2-dark{
-    color: white;
-}
-.p-dark{
-    color: orangered;
+    margin: auto;
+    text-align: center;
+    /* padding-top: 5%; */
 }
 
+.h2-dark{
+    color: orangered;
+    /* padding-top: 5%; */
+}
+.p-dark{
+    color: white;
+}
+.p-card{
+    margin: auto;
+    text-align: center;
+    max-width: 60%;
+    padding-top: 1%;
+}
 label{
     font-size: large;
 }
@@ -165,9 +175,7 @@ label{
 }
 input[button] {
     font-family: 'Oswald', sans-serif;
-    
 }
-
 
 fieldset {
     font-family: 'Oswald', sans-serif;
@@ -177,18 +185,16 @@ fieldset {
     justify-content: center;
     align-items: center;
 }
-/* fieldset > input{
-    margin-left: 10%;
-} */
+
 .bold-text {
     font-weight: bold;
+    text-align: center;
 }
 
-/* #secondNav > ul{
-    
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-/* } */
+
+.p-dark-footer {
+    color: orangered;
+}
 
 .card {
     padding: 10%, 0;
@@ -203,6 +209,9 @@ fieldset {
     background-color: black;
     border: solid 1px grey;
     /* border-style: solid grey; */
+}
+.card-character{
+    height:36vh;
 }
 .name-card-dark{
     background-color: black;

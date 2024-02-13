@@ -16,14 +16,11 @@ body {
 
 .canvas {
     background-color: white;
-    /* background-color: black; */
-    /* margin: auto; */
-    /* width: 50%; */
-    /* height: 20%; */
+   
 }
 .canvas-dark{
     background-color: black;
-    /* color: orangered; */
+    
 }
 
 .mainNav {
@@ -171,24 +168,16 @@ input[button] {
 
 fieldset {
     font-family: 'Oswald', sans-serif;
-    /* height: 100vh; */
     width: 60vh;
     margin: auto;
     justify-content: center;
     align-items: center;
 }
-/* fieldset > input{
-    margin-left: 10%;
-} */
+
 .bold-text {
     font-weight: bold;
 }
 
-/* #secondNav > ul{
-    
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-/* } */
 
 .card {
     padding: 10%, 0;
@@ -202,7 +191,6 @@ fieldset {
 .card-dark{
     background-color: black;
     border: solid 1px grey;
-    /* border-style: solid grey; */
 }
 
 .card-body {
