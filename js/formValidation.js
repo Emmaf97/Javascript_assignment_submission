@@ -12,7 +12,10 @@ function init() {
     let telephoneBox = document.getElementById("clientTel");
     telephoneBox.addEventListener("focusout", invalidTel);
 }
-
+// this submit event is checking thst the required fields for inputs in a number of use cases e.g all inputs empty, 2 inputs empty etc.
+// It does this by calling the isEmpty function this returns true or false.
+// If isEmpty is true it creates the error message and displays them under the corresponding elements that are required, using the createError method.
+// If isEmpty returns false it removes the errormessage and prevents multiple of them from displaying each time the button is clicked.
 function submitEvent(event) {
     event.preventDefault();
     let { nameInput, nameLastInput, emailInput, telephoneInput } = getFormElements();
@@ -80,23 +83,23 @@ function submitEvent(event) {
 function isEmpty() {
     let { nameInput, nameLastInput, emailInput, telephoneInput } = getFormElements();
     if (nameInput.value && nameLastInput.value && emailInput.value && telephoneInput.value) {
-        console.log("value detected for all inputs");
+        // console.log("value detected for all inputs");
         return false;
     } else if (nameInput.value && nameLastInput.value) {
-        console.log("value detected for first and last name");
+        // console.log("value detected for first and last name");
         return false;
     } else if (emailInput.value && telephoneInput.value) {
-        console.log("value detected for email and mobile");
+        // console.log("value detected for email and mobile");
         return false;
     }
     else if (!nameInput.value && !nameLastInput.value && !emailInput.value && !telephoneInput.value) {
-        console.log(" no value detected for all inputs");
+        // console.log(" no value detected for all inputs");
         return true;
     } else if (!nameInput.value && !nameLastInput.value) {
-        console.log("no value detected for first and last name");
+        // console.log("no value detected for first and last name");
         return true;
     } else if (!emailInput.value && !telephoneInput.value) {
-        console.log("no value detected for email and mobile");
+        // console.log("no value detected for email and mobile");
         return true;
     }
 }
@@ -121,6 +124,8 @@ function createError(nameInput, nameLastInput, emailInput, telephoneInput) {
 function removeError(errorMsg) {
     errorMsg.remove();
 }
+
+// this returns the common elements of the form so that I can all them easily without repeating the same code on multiple lines.
 function getFormElements() {
     let nameInput = document.getElementById("fName");
     let nameLastInput = document.getElementById("lName");
@@ -129,7 +134,7 @@ function getFormElements() {
 
     return { nameInput, nameLastInput, emailInput, telephoneInput };
 }
-
+// In invalidFName I check to see if the user entered a digit into the field. If so an error message will be displayed.
 function invalidFName() {
     let nameInput = document.getElementById("fName");
     let errorMsg = nameInput.nextElementSibling;
@@ -147,6 +152,7 @@ function invalidFName() {
         }
     }
 }
+// In invalidLName I check to see if the user entered a digit into the field. If so an error message will be displayed.
 function invalidLName() {
     let nameLastInput = document.getElementById("lName");
     let errorMsg = nameLastInput.nextElementSibling;
@@ -164,6 +170,9 @@ function invalidLName() {
         }
     }
 }
+// In invalidEmail I check to see if the user entered an @ format for the email and I also check if they have a gmail.com format.
+// If the user does not enter an @ symbol the @ symbol error will appear.
+// If the user does not enter gmail.com the gmail format error will appear.
 function invalidEmail() {
     let emailInput = document.getElementById("clientEmail");
     let errorMsg = emailInput.nextElementSibling;
@@ -188,6 +197,9 @@ function invalidEmail() {
         }
     }
 }
+
+// In invalidTel I check to see if the user entered any character other than a digit. If so an error message will be displayed.
+// I also check to see that the length of the number entered is not less than 10 digits.
 function invalidTel() {
     let telephoneInput = document.getElementById("clientTel");
     let errorMsg = telephoneInput.nextElementSibling;

@@ -16,14 +16,9 @@ body {
 
 .canvas {
     background-color: white;
-    /* background-color: black; */
-    /* margin: auto; */
-    /* width: 50%; */
-    /* height: 20%; */
 }
 .canvas-dark{
     background-color: black;
-    /* color: orangered; */
 }
 
 .mainNav {
@@ -208,7 +203,6 @@ fieldset {
 .card-dark{
     background-color: black;
     border: solid 1px grey;
-    /* border-style: solid grey; */
 }
 .card-character{
     height:36vh;
@@ -252,11 +246,11 @@ fieldset {
     flex-wrap: wrap; 
  }
 
-.card.campaign.tyrannyOfDragons {
+/* .card.campaign.tyrannyOfDragons {
     background-image: url(../images/tyrannyOfDragons\ copy.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .characterPage {
     background-color: black;

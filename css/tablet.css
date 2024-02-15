@@ -16,11 +16,9 @@ body {
 
 .canvas {
     background-color: white;
-   
 }
 .canvas-dark{
     background-color: black;
-    
 }
 
 .mainNav {
@@ -143,14 +141,24 @@ a {
 
 h2 {
     font-family: 'Oswald', sans-serif;
-}
-.h2-dark{
-    color: white;
-}
-.p-dark{
-    color: orangered;
+    margin: auto;
+    text-align: center;
+    /* padding-top: 5%; */
 }
 
+.h2-dark{
+    color: orangered;
+    /* padding-top: 5%; */
+}
+.p-dark{
+    color: white;
+}
+.p-card{
+    margin: auto;
+    text-align: center;
+    max-width: 60%;
+    padding-top: 1%;
+}
 label{
     font-size: large;
 }
@@ -162,12 +170,11 @@ label{
 }
 input[button] {
     font-family: 'Oswald', sans-serif;
-    
 }
-
 
 fieldset {
     font-family: 'Oswald', sans-serif;
+    /* height: 100vh; */
     width: 60vh;
     margin: auto;
     justify-content: center;
@@ -176,8 +183,13 @@ fieldset {
 
 .bold-text {
     font-weight: bold;
+    text-align: center;
 }
 
+
+.p-dark-footer {
+    color: orangered;
+}
 
 .card {
     padding: 10%, 0;
@@ -191,6 +203,12 @@ fieldset {
 .card-dark{
     background-color: black;
     border: solid 1px grey;
+}
+.card-character{
+    height:36vh;
+}
+.name-card-dark{
+    background-color: black;
 }
 
 .card-body {
@@ -229,7 +247,6 @@ fieldset {
  }
 
 .card.campaign.tyrannyOfDragons {
-    background-image: url(../images/tyrannyOfDragons\ copy.png);
     background-repeat: no-repeat;
     background-size: cover;
 }

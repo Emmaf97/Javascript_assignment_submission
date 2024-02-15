@@ -1,5 +1,6 @@
 
-//document.addEventListener("DOMContentLoaded",loadCanvas );
+// This creates a particle effect on the text when it enters the canvas on page load and also has response to mouse interaction.
+// This effect idea was inspired by the video https://www.youtube.com/watch?v=2F2t1RJoGt8
 window.addEventListener("DOMContentLoaded",function (){
     const canvas = document.querySelector(".canvas");
     const section = document.querySelector("#header");
@@ -8,6 +9,8 @@ window.addEventListener("DOMContentLoaded",function (){
     canvas.height = section.clientHeight;
 
     const text = "D&DFN";
+// Here we make the class particle. this takes an effect, x, y and color.
+// It has methods for drawing the particle from the effect effect object using the originX and Y on the canvas.
 
     class Particle {
         constructor(effect, x, y, color) {
@@ -32,7 +35,8 @@ window.addEventListener("DOMContentLoaded",function (){
             this.effect.context.fillStyle = this.color;
             this.effect.context.fillRect(this.x, this.y, this.size, this.size);
         }
-
+// Update gets the mouse position checks distance of the text against the radius of the mouse. If the distance is less than the mouse radius,
+// it then applies the velocity, force and an angle using the pythagoras theorem to the variables x and y.
         update() {
             this.dx = this.effect.mouse.x - this.x;
             this.dy = this.effect.mouse.y - this.y;
@@ -48,6 +52,7 @@ window.addEventListener("DOMContentLoaded",function (){
         }
     }
 
+// the effect class takes a context, width and a height(ctx(this uses the 2d library to make the particle effect), width and height)
     class Effect {
         constructor(context, clientWidth, clientHeight) {
             this.context = context;
@@ -68,6 +73,8 @@ window.addEventListener("DOMContentLoaded",function (){
                 this.mouse.y = e.y;
             });
         }
+        // displayText displays the text to the canvas and also checks whether darkmode is enabled or not and applies color accordingly.
+        // It also sets the fontsize, where the text is centered and envokes the converToParticles function.
         displayText(text) {
             if(localStorage.getItem("dark-mode") === "true"){
                 this.context.fillStyle = "orangered";
@@ -80,6 +87,9 @@ window.addEventListener("DOMContentLoaded",function (){
             this.context.fillText(text, this.textX, this.textY);
             this.converToParticles();
         }
+        // converToParticles() this scans the canvas for text and creates a grid of x and y. The two for loops run through the canvas and check the color
+        // values for each pixel. If the alpha is greater than 0 then it will add the pixel to the red, green or blue color array and will
+        // then push the the new particle to the with the x and y and color string to the particle array.
         converToParticles() {
             this.particles = [];
             const pixels = this.context.getImageData(0, 0, this.clientWidth, this.clientHeight).data;
@@ -94,7 +104,6 @@ window.addEventListener("DOMContentLoaded",function (){
                         const blue = pixels[index + 2];
                         const color = 'rgb(' + red + ',' + green + ',' + blue + '}';
                         this.particles.push(new Particle(this, x, y, color));
-                        //console.log(color);
                     }
                 }
             }
@@ -105,18 +114,12 @@ window.addEventListener("DOMContentLoaded",function (){
                 particle.draw();
             });
         }
-        // resize(width,height){
-        // canvas.width = width;
-        // canvas.height = height;
-        // this.textX = this.clientWidth / 2;
-        // this.textY = this.clientHeight/ 2;
-        // effect.displayText(text);
-        //     }
     }
-
+ // This creates a new Effect object and effect.displayText will pass in the text variable assigned above.
     const effect = new Effect(ctx, canvas.width, canvas.height);
     effect.displayText(text);
 
+    // this function clears the canvas so that the text does not stay on the screen along with all the other iterations of the text.
     function animate() {
         ctx.clearRect(0, 0, canvas.width,canvas.height);
         effect.render();
@@ -124,9 +127,4 @@ window.addEventListener("DOMContentLoaded",function (){
     }
     animate();
 
-    // window.addEventListener("resize", function(){
-    //     canvas.width = section.clientWidth;
-    //     canvas.height = section.clientHeight;
-    //     effect.resize(canvas.width,canvas.height);
-    // });
 });
