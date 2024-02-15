@@ -1,4 +1,7 @@
 #### I do not own any of the text or images used in this project, They were sourced from D&D Beyond and are used purely as a portfolio piece.
+
+#### link to site https://emmaf97.github.io/Javascript_assignment_submission/html/index
+
 # Javascript Project based on D&D (Dungeons & Dragons) Game
 ## Goal of project
 ### To allow newcomers to the D&D world learn how to play the game and allow familiar players to look at other content on the site such campaigns and external videos.
