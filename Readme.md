@@ -4,7 +4,7 @@
 ### To allow newcomers to the D&D world learn how to play the game and allow familiar players to look at other content on the site such campaigns and external videos.
 
 ## Currency Converter
-### I created a currency converter that was based on a select element.The currency would be converted correctly based on the symbol that the user picked. This would apply to all the same elements that have the currency. This is explained in more detail in the convertCurrency.js file.
+#### I created a currency converter that was based on a select element.The currency would be converted correctly based on the symbol that the user picked. This would apply to all the same elements that have the currency. This is explained in more detail in the convertCurrency.js file.
 
 ## Particle Effect using Canvas
 #### I created a particle effect using the canvas. I have an effect where the text floats into the screen and when the user moves their mouse over the text, the text moves around the mouse. I go into more detail how this was achieved in the canvas.js file.
