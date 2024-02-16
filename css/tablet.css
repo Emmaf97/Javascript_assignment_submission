@@ -192,13 +192,20 @@ fieldset {
 }
 
 .card {
-    padding: 10%, 0;
+    /* padding: 10%, 0; */
+    background-color: #f6f5f5;
+    height: 36vh;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: normal;
+    /* padding: 10%, 0;
     background-color: #f6f5f5;
     height: 90vh;
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 .card-dark{
     background-color: black;
