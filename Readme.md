@@ -1,4 +1,4 @@
-#### I do not own any of the text, images or videos used in this project, They were sourced from D&D Beyond and are used purely as a portfolio piece.
+#### I do not own any of the text, images or videos used in this project, The text and images are sourced from D&D Beyond and are used purely as a portfolio piece.
 
 #### link to site https://emmaf97.github.io/Javascript_assignment_submission/html/index
 
