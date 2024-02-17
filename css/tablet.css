@@ -6,18 +6,6 @@ body {
     background-color: white;
 }
 
-/* .border-class {
-    border: 1px solid red;
-} */
-
-/* .bg-body-tertiary{
-    background-color: 0;
-    width: 80vw;
-}
-.bg-body-tertiary-dark{
-    background-color: black;
-} */
-
 .container {
     max-width: 100%;
 }
@@ -41,9 +29,6 @@ ul {
     margin-top: -23px;
     margin-bottom: -1rem;
     margin-left: 50%;
-    /* justify-content: space-between;
-    align-items: center;
-    flex-direction: row; */
 }
 
 ul>li {
@@ -51,7 +36,6 @@ ul>li {
     font-size: large;
     margin: auto;
     margin-right: 7%;
-    /* margin-left: 7%; */
 }
 
 li::marker {
@@ -70,7 +54,6 @@ a {
 #image-grid {
     margin-bottom: 3vh;
     border-radius: 3vh;
-    /* margin: auto; */
     width: 100%;
     display: inline-flex;
     flex-wrap: nowrap;
@@ -104,7 +87,6 @@ a {
 
 .btn {
     border: 1px solid black;
-    /* border-radius: 40%; */
     font-family: 'Oswald', sans-serif;
 }
 
@@ -124,42 +106,6 @@ a {
         display: flex;
        
 }
-
-/* #characterPageCard {
-    width: 20vw;
-    background-image: url(../images/curseOfTheStrahdCard.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: black;
-} */
-
-/* #externalLinkCard {
-    width: 20vw;
-    background-image: url(../images/curseOfTheStrahdCard.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#videosCard {
-    width: 20vw;
-    background-image: url(../images/talesFromTheYawningPortal.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#backgroundsCard {
-    width: 20vw;
-    background-image: url(../images/curseOfTheStrahdCard.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#campaignCard {
-    width: 20vw;
-    background-image: url(../images/curseOfTheStrahdCard.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
 
 .invalid-Form-Input {
     background-color: white;
@@ -183,9 +129,7 @@ a {
 
 h2 {
     font-family: 'Oswald', sans-serif;
-    /* margin: auto; */
     text-align: center;
-    /* padding-top: 5%; */
 }
 .h2-navigation {
     font-family: 'Oswald', sans-serif;
@@ -194,7 +138,6 @@ h2 {
 
 .h2-dark{
     color: orangered;
-    /* padding-top: 5%; */
 }
 .p-dark{
     color: white;
@@ -220,7 +163,6 @@ input[button] {
 
 fieldset {
     font-family: 'Oswald', sans-serif;
-    /* height: 100vh; */
     width: 60vh;
     margin: auto;
     justify-content: center;
@@ -238,7 +180,6 @@ fieldset {
 }
 
 .card {
-    /* padding: 10%, 0; */
     background-color: #f6f5f5;
     height: 90vh;
     margin: auto;
@@ -256,7 +197,6 @@ fieldset {
 }
 
 .card-navigation-character{
-    /* background-color: #f6f5f5; */
     background-image: url(../images/curseOfTheStrahdCard.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -271,10 +211,7 @@ fieldset {
     align-items: center;
 }
 .card-video-section{
-    /* padding: 10%, 0; */
-    /* background-color: #f6f5f5; */
     height: 68vh;
-    /* margin: auto; */
     margin-bottom: 3vh;
     border-radius: 3vh;
     display: flex;
@@ -310,7 +247,6 @@ fieldset {
 }
 .border{
     border: var(--bs-border-width) var(--bs-border-style) #0c6ffd!important;
-    /* border: var(--bs-border-width) var(--bs-border-style) orangered!important; */
 }
 .border-dark{
     border: var(--bs-border-width) var(--bs-border-style) orangered!important;
@@ -329,29 +265,6 @@ fieldset {
 .contact{
     border-radius: 3vh;
 }
-/* #card-Second-Nav{
-    border: solid 1px black;
-    display: flex;
-    height: 30vh;
-    width: 15vw;
-    border: solid 1px black;
-    border-radius: 20px;
-    justify-content: first baseline;
-}
-#card-Second-Nav > ul{
-    flex-direction: column;
-    flex-wrap: wrap; 
- } */
-
-/* .card.campaign.tyrannyOfDragons {
-    background-image: url(../images/tyrannyOfDragons\ copy.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-
-/* .characterPage {
-    background-color: black;
-} */
 .characterCard{
         height: 40vh;
         width: 98vw;

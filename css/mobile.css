@@ -1,310 +1,473 @@
-.body-dark {
-    background-color: black;
-}
-
-body {
-    background-color: white;
-}
-
-/* .border-class {
-    border: 1px solid red;
-} */
-
-.container {
-    max-width: 100%;
-}
-
-.canvas {
-    background-color: white;
-}
-
-.canvas-dark {
-    background-color: black;
-}
-
-.mainNav {
-    margin: auto;
-}
-
-.header {
-    margin: auto;
-}
-
-ul {
-    display: inline;
-    padding-left: 0;
-    flex-direction: row;
-}
-
-ul>li {
-    text-decoration: none;
-    font-size: large;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-li::marker {
-    content: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-#image-grid {
-    margin: auto;
-    width: 100%;
-    display: inline;
-}
-
-.iframe {
-    height: 100%;
-    width: 100%;
-}
-
-.text-primaryDark {
-    color: white;
-}
-
-#darkModeBtn {
-    display: inline;
-    margin-left: 37vw;
-    margin-top: 2%;
-    font-family: 'Oswald', sans-serif;
-    border: 1px solid black
-}
-
-.button-dark {
-    background-color: orangered;
-}
-
-.btn.active {
-    color: black;
-    border: 1px solid white;
-    background-color: white;
-}
-
-.btn {
-    border: 1px solid black;
-    font-family: 'Oswald', sans-serif;
-}
-
-.btn-nav {
-    padding-left: 39vw;
-    padding-right: 42vw;
-}
-
-.btn-nav-short {
-    padding-left: 40vw;
-    padding-right: 44vw;
-}
-
-.btn-nav-long {
-    padding-left: 39vw;
-    padding-right: 40%;
-}
-
-.btn-nav-extra-long{
-    padding-left: 39vw;
-    padding-right: 42%;
-}
-
-.mainNavDark {
-    color: white;
-}
-
-.parentClass {
-    justify-content: center;
-}
-
-.childClass {
-    display: flex;
-}
-
-#characterPageCard {
-    width: 93vw;
-    height: 13vh;
-}
-
-#externalLinkCard {
-    width: 93vw;
-    height: 13vh;
-}
-
-#videosCard {
-    width: 93vw;
-    height: 13vh;
-}
-
-#backgroundsCard {
-    width: 93vw;
-    height: 13vh;
-}
-
-#campaignCard {
-    width: 93vw;
-    height: 13vh;
-}
-
-#characterCreation {
-    width: 93vw;
-    ;
-}
-
-.invalid-Form-Input {
-    background-color: white;
-    color: red;
-    font-family: 'Oswald', sans-serif;
-}
-
-.invalid-Form-Input-Dark {
-    background-color: red;
-    color: salmon;
-    font-family: 'Oswald', sans-serif;
-}
-
-.footer>p {
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    /* color: #0d6efd; */
-}
-
-.p-dark-footer {
-    color: orangered;
-}
-
-h2 {
-    font-family: 'Oswald', sans-serif;
-}
-
-.h2-dark {
-    color: orangered;
-}
-
-.p-dark {
-    color: white;
-}
-
-label {
-    font-size: large;
-}
-
-.label-dark {
-    color: orangered;
-}
-
-.legend-dark {
-    color: white
-}
-
-input[type="submit"] {
-    margin-left: 25vw;
-}
-
-
-fieldset {
-    font-family: 'Oswald', sans-serif;
-
-    width: 35vh;
-
-}
-
-.bold-text {
-    font-weight: bold;
-    font-style: italic;
-    color: orangered;
-}
-
-
-.card {
-
-    background-color: #f6f5f5;
-    height: 56vh;
-    margin-bottom: 2vh;
-    margin-top: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-dark {
-    background-color: black;
-    border: solid 1px grey;
-}
-
-.name-card-dark {
-    background-color: black;
-}
-
-.card-body {
-    display: block;
-    margin: auto;
-    width: 90%;
-}
-
-.card-video-section {
-    height: 27vh;
-    margin-bottom: 2vh;
-    margin-top: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.name-card {
-    padding: 10%, 0;
-    height: 8vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card.campaign {
-    height: 86vh;
-    width: 94vw;
-    margin-bottom: 2vh;
-    margin-top: 2vh;
-
-}
-
-#card-contact {
-    height: 72vh;
-    width: 93vw;
-}
-
-#card-contact-body {
-    height: 72vh;
-    width: 93vw;
-    border: solid 1px black;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-
-}
-
-#card-Second-Nav {
-    border: solid 1px black;
-    display: flex;
-    height: 30vh;
-    width: 15vw;
-    border: solid 1px black;
-    border-radius: 20px;
-    justify-content: first baseline;
-}
-
-#card-Second-Nav>ul {
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-
-
-.characterPage {
-    background-color: black;
-}
-
-img {
-    width: 40vh;
-    height: 40vh;
-}
+ .body-dark {
+     background-color: black;
+ }
+
+ body {
+     background-color: white;
+ }
+
+ .container {
+     max-width: 100%;
+ }
+
+ .canvas {
+     background-color: white;
+ }
+
+ .canvas-dark {
+     background-color: black;
+ }
+
+ .mainNav {
+     margin: auto;
+ }
+
+ .header {
+     margin: auto;
+ }
+
+ ul {
+     display: inline;
+     padding-left: 0;
+     flex-direction: row;
+ }
+
+ ul>li {
+     text-decoration: none;
+     font-size: large;
+     margin-right: auto;
+     margin-left: auto;
+ }
+
+ li::marker {
+     content: none;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ #image-grid {
+     margin: auto;
+     width: 100%;
+     border-radius: 3vh;
+ }
+
+ .iframe {
+     height: 100%;
+     width: 100%;
+ }
+
+ .text-primaryDark {
+     color: white;
+ }
+
+ #darkModeBtn {
+     display: inline;
+     margin-left: 37vw;
+     margin-top: 2%;
+     font-family: 'Oswald', sans-serif;
+     border: 1px solid black
+ }
+
+ .button-dark {
+     background-color: orangered;
+ }
+
+ .btn.active {
+     color: black;
+     border: 1px solid white;
+     background-color: white;
+ }
+
+ .btn {
+     border: 1px solid black;
+     font-family: 'Oswald', sans-serif;
+ }
+
+ .btn-nav {
+     padding-left: 39vw;
+     padding-right: 42vw;
+ }
+
+ .btn-nav-short {
+     padding-left: 40vw;
+     padding-right: 44vw;
+ }
+
+ .btn-nav-long {
+     padding-left: 39vw;
+     padding-right: 40%;
+ }
+
+ .btn-nav-extra-long {
+     padding-left: 39vw;
+     padding-right: 42%;
+ }
+
+ .mainNavDark {
+     color: white;
+ }
+
+ .invalid-Form-Input {
+     background-color: white;
+     color: red;
+     font-family: 'Oswald', sans-serif;
+ }
+
+ .invalid-Form-Input-Dark {
+     background-color: red;
+     color: salmon;
+     font-family: 'Oswald', sans-serif;
+ }
+
+ .footer>p {
+     font-family: 'Oswald', sans-serif;
+     text-align: center;
+ }
+
+ .p-dark-footer {
+     color: orangered;
+ }
+
+ h2 {
+     font-family: 'Oswald', sans-serif;
+ }
+
+ .h2-dark {
+     color: orangered;
+ }
+
+ .p-dark {
+     color: white;
+ }
+
+ label {
+     font-size: large;
+ }
+
+ .label-dark {
+     color: orangered;
+ }
+
+ .legend-dark {
+     color: white
+ }
+
+ input[type="submit"] {
+     margin-left: 25vw;
+ }
+
+
+ fieldset {
+     font-family: 'Oswald', sans-serif;
+
+     width: 35vh;
+
+ }
+
+ .bold-text {
+     font-weight: bold;
+     font-style: italic;
+     color: orangered;
+ }
+
+
+ .card {
+
+     background-color: #f6f5f5;
+     height: 56vh;
+     margin-bottom: 2vh;
+     margin-top: 2vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .card-dark {
+     background-color: black;
+     border: solid 1px grey;
+ }
+
+ .name-card-dark {
+     background-color: black;
+ }
+
+ .card-body {
+     display: block;
+     margin: auto;
+     width: 90%;
+ }
+
+ .card-video-section {
+     height: 27vh;
+     margin-bottom: 2vh;
+     margin-top: 2vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .name-card {
+     padding: 10%, 0;
+     height: 8vh;
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #card-contact {
+     height: 86vh;
+     width: 93vw;
+ }
+
+ #card-contact-body {
+     height: 81vh;
+     width: 90vw;
+     display: flex;
+     justify-content: center;
+     padding-left: 20px;
+
+ }
+
+ #card-Second-Nav {
+     border: solid 1px black;
+     display: flex;
+     height: 30vh;
+     width: 15vw;
+     border: solid 1px black;
+     border-radius: 20px;
+     justify-content: first baseline;
+ }
+
+ #card-Second-Nav>ul {
+     flex-direction: column;
+     flex-wrap: wrap;
+ }
+
+
+
+ .characterPage {
+     background-color: black;
+ }
+
+ img {
+     width: 40vh;
+     height: 40vh;
+ }
+
+
+ #priceConverter {
+    margin-left: 21vw;
+ }
+
+
+ .parentClass {
+     margin-top: 3vh;
+     margin-bottom: 3vh;
+     justify-content: center;
+     border-radius: 10px;
+ }
+
+ .childClass {
+     display: flex;
+
+ }
+
+ .invalid-Form-Input {
+     background-color: white;
+     color: red;
+     font-family: 'Oswald', sans-serif;
+ }
+
+ .invalid-Form-Input-Dark {
+     background-color: red;
+     color: salmon;
+     font-family: 'Oswald', sans-serif;
+ }
+
+ .footer {
+     border-radius: 39px;
+     margin-top: 3vh;
+ }
+
+ .footer>p {
+     font-family: 'Oswald', sans-serif;
+     text-align: center;
+ }
+
+ h2 {
+     font-family: 'Oswald', sans-serif;
+     text-align: center;
+ }
+
+ .h2-navigation {
+     font-family: 'Oswald', sans-serif;
+     text-align: center;
+ }
+
+ .h2-dark {
+     color: orangered;
+ }
+
+ .p-dark {
+     color: white;
+ }
+
+ .p-card {
+     margin: auto;
+     text-align: center;
+     max-width: 80%;
+     padding-top: 1%;
+ }
+
+ label {
+     font-size: large;
+ }
+
+ .label-dark {
+     color: orangered;
+ }
+
+ .legend-dark {
+     color: white
+ }
+
+ input[button] {
+     font-family: 'Oswald', sans-serif;
+ }
+
+ fieldset {
+     font-family: 'Oswald', sans-serif;
+     width: 60vh;
+     margin: auto;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .bold-text {
+     font-weight: bold;
+     text-align: center;
+ }
+
+
+ .p-dark-footer {
+     color: orangered;
+ }
+
+ .card {
+     background-color: #f6f5f5;
+     height: 90vh;
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .card-dark {
+     background-color: black;
+     border: solid 1px grey;
+ }
+
+ .card-nav-dark {
+     background-color: black;
+     border: solid 1px grey;
+ }
+
+ .card-navigation-character {
+     background-image: url(../images/curseOfTheStrahdCard.png);
+     background-repeat: no-repeat;
+     background-size: contain;
+     height: 50vh;
+     width: 80vw;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 3vh;
+     margin-bottom: 3vh;
+     display: flex;
+     justify-content: end;
+     align-items: center;
+ }
+
+ .card-video-section {
+     height: 77vh;
+     margin-top: 3vh;
+     border-radius: 3vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .card-character {
+     margin-bottom: 3vh;
+     margin-top: 3vh;
+     height: 75vh;
+     padding-top: 5%;
+     border-radius: 59px;
+ }
+
+ .name-card-dark {
+     background-color: black;
+ }
+
+ .card-body {
+     display: block;
+     margin: auto;
+     width: 90%;
+ }
+
+ .card-body-dark {
+     background-color: black;
+
+ }
+
+ .card.campaign {
+     height: 92vh;
+     width: 94vw;
+     margin-bottom: 7vh;
+     border-radius: 3vw;
+
+ }
+
+ .border {
+     border: var(--bs-border-width) var(--bs-border-style) #0c6ffd !important;
+ }
+
+ .border-dark {
+     border: var(--bs-border-width) var(--bs-border-style) orangered !important;
+ }
+
+ .card.campaign>p {
+     max-width: 80%;
+ }
+
+ .card>#card-contact {
+     height: 90vh;
+     width: 70vw;
+     border: solid 1px black;
+     border-radius: 20px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .contact {
+     border-radius: 3vh;
+     margin-top: 3vh;
+ }
+
+ .characterCard {
+     height: 78vh;
+     width: 94vw;
+     margin-bottom: 2vh;
+     border-radius: 3vh;
+ }
+
+ .characterCard>p {
+     max-width: 60%;
+ }
+
+ img {
+     width: 40vh;
+     height: 40vh;
+ }
